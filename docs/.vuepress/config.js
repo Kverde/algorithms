@@ -29,7 +29,7 @@ module.exports = {
       {},
       `
 	    var __rm__config = {
-        projectId: '-Mibn7-xoaevC6Q4qq9f',
+        projectId: '-NE7NESwBLRrHXE1JpTi',
         locale: 'ru',
         contextWidget: 0,
         embedBtn: 0,
