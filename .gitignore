@@ -2,3 +2,6 @@ node_modules
 .temp
 .cache
 docs/.vuepress/dist
+
+.venv
+__pycache__
