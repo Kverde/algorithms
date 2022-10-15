@@ -12,7 +12,7 @@ def list_files(path: str) -> Iterator[str]:
 
 
 def read_file(path: str) -> str:
-    with open(path) as file:
+    with open(path, 'r', encoding='utf-8') as file:
         return file.read()
 
 
@@ -20,5 +20,9 @@ def write_file(path: str, content: str) -> None:
     folder, _ = os.path.split(path)
     os.makedirs(folder, exist_ok=True)
 
-    with open(path, 'w') as file:
+    with open(path, 'w', encoding='utf-8') as file:
         return file.write(content)
+
+
+def fixture(name: str) -> str:
+    return os.path.join('site_builder', 'fixtures', name)

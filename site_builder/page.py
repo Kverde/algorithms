@@ -1,7 +1,11 @@
 from __future__ import annotations
 import os
 
-from site_builder.utils import list_files, read_file, write_file
+# 3-rd party
+import frontmatter
+
+# custom
+from site_builder.utils import list_files, read_file, write_file, fixture
 
 
 class SiteBuilder:
@@ -12,9 +16,21 @@ class SiteBuilder:
         for page in self.pages:
             page.save(path)
 
+        self.build_index(path)
+
     def build_index(self, path):
-        pass
-        # self.content = read_file(path)
+        index_page = read_file(fixture('readme.md'))
+        links = []
+
+        for page in self.pages:
+            title = page.metadata['title']
+            url = page.rel_filename
+            link = f'* [{title}]({url})'
+            links.append(link)
+
+        content = '\n'.join(links)
+        index_page = index_page.replace('[[content]]', content)
+        write_file(os.path.join(path, 'readme.md'), index_page)
 
 
 class Page:
@@ -28,8 +44,11 @@ class Page:
 
         self.rel_filename = os.path.join(self.folder, self.filename)
 
+        self.read_page()
+
     def read_page(self):
         self.content = read_file(self.full_filename)
+        self.metadata, _ = frontmatter.parse(self.content)
 
     def __str__(self) -> str:
         return self.full_filename
