@@ -2,4 +2,7 @@ dev:
 	yarn docs:dev
 
 build:
-	python main.py
+	poetry run python main.py
+
+test:
+	poetry run pytest site_builder/tests

@@ -6,15 +6,15 @@ page_type: original
 
 # {{ $frontmatter.title }}
 
-Barbara Liskov
+{{center|Barbara Liskov
 Massachusetts Institute of Technology
 Project MAC
-Cambridge, Massachusetts
+Cambridge, Massachusetts}}
 
-Stephen Zilles
+{{center|Stephen Zilles
 Cambridge Systems Group
 IBM Systems Development Division
-Cambridge, Massachusetts
+Cambridge, Massachusetts}}
 
 [Source](https://dl.acm.org/doi/pdf/10.1145/942572.807045).
 

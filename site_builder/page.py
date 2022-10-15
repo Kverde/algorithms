@@ -8,6 +8,7 @@ from ruamel.yaml import YAML
 
 # custom
 from site_builder.utils import list_files, read_file, write_file, fixture
+from site_builder.template import prepare
 
 
 class WrongPageFile(Exception):
@@ -103,8 +104,9 @@ class Page:
     def save(self, path) -> None:
         dest_folder = os.path.join(path, self.folder)
         dest_filename = os.path.join(dest_folder, self.filename)
+        prepared_content = prepare(self.content)
 
-        write_file(dest_filename, self.content)
+        write_file(dest_filename, prepared_content)
 
     @staticmethod
     def from_path(path: str, base_path: str) -> Page:

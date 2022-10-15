@@ -1,0 +1,11 @@
+<p class="alg-center">Barbara Liskov<br/>
+Massachusetts Institute of Technology<br/>
+Project MAC<br/>
+Cambridge, Massachusetts</p>
+
+<p class="alg-center">Stephen Zilles<br/>
+Cambridge Systems Group<br/>
+IBM Systems Development Division<br/>
+Cambridge, Massachusetts</p>
+
+[Source](https://dl.acm.org/doi/pdf/10.1145/942572.807045).
