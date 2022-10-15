@@ -8,6 +8,7 @@ authors = ["KonstantinSh <Kverde@yandex.ru>"]
 python = "^3.10"
 autopep8 = "^1.7.0"
 python-frontmatter = "^1.0.0"
+"ruamel.yaml" = "^0.17.21"
 
 [tool.poetry.dev-dependencies]
 

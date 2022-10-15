@@ -6,6 +6,8 @@ page_type: abstract_data_type
 
 # {{ $frontmatter.title }}
 
+[[toc]]
+
 Стек — абстрактный тип данных со следующими операциями:
 
 - Основные
