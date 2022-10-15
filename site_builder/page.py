@@ -8,9 +8,14 @@ import frontmatter
 from site_builder.utils import list_files, read_file, write_file, fixture
 
 
+class WrongPageFile(Exception):
+    pass
+
+
 class SiteBuilder:
     def __init__(self, path) -> None:
-        self.pages = [Page.from_path(file, path) for file in list_files(path)]
+        self.pages = [Page.from_path(file, path)
+                      for file in list_files(path, '.md')]
 
     def build(self, path):
         for page in self.pages:
@@ -51,6 +56,10 @@ class Page:
     def read_page(self):
         self.content = read_file(self.full_filename)
         self.metadata, _ = frontmatter.parse(self.content)
+
+        if len(self.metadata) == 0:
+            raise WrongPageFile(
+                f"Metadata is empty in file {self.rel_filename}")
 
     def __str__(self) -> str:
         return self.full_filename

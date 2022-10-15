@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="68.524216mm"
+   height="257.87283mm"
+   viewBox="0 0 68.524216 257.87283"
+   version="1.1"
+   id="svg384"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   sodipodi:docname="stack01.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview386"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.84096521"
+     inkscape:cx="241.98385"
+     inkscape:cy="566.61084"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs381">
+    <marker
+       style="overflow:visible"
+       id="TriangleStart"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="TriangleStart"
+       markerWidth="5.3244081"
+       markerHeight="6.155385"
+       viewBox="0 0 5.3244081 6.1553851"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path135" />
+    </marker>
+    <rect
+       x="499.4516"
+       y="349.36389"
+       width="126.12414"
+       height="65.584557"
+       id="rect1835" />
+    <marker
+       style="overflow:visible"
+       id="TriangleStart-8"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="TriangleStart"
+       markerWidth="5.3244081"
+       markerHeight="6.155385"
+       viewBox="0 0 5.3244081 6.1553851"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path135-0" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="TriangleStart-4"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="TriangleStart"
+       markerWidth="5.3244081"
+       markerHeight="6.155385"
+       viewBox="0 0 5.3244081 6.1553851"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path135-4" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-38.944231,-34.077725)">
+    <g
+       id="g1442"
+       transform="translate(-4.0322525)">
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:0.282492"
+         id="rect1217"
+         width="37.902237"
+         height="9.2037373"
+         x="43.117729"
+         y="34.218971" />
+      <text
+         xml:space="preserve"
+         style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.264583"
+         x="56.735844"
+         y="40.599884"
+         id="text1273"><tspan
+           sodipodi:role="line"
+           id="tspan1271"
+           style="stroke-width:0.264583"
+           x="56.735844"
+           y="40.599884">Стек</tspan></text>
+    </g>
+    <g
+       id="g1442-7"
+       transform="translate(-4.0322525,248.38661)">
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:0.282492"
+         id="rect1217-6"
+         width="37.902237"
+         height="9.2037373"
+         x="43.117729"
+         y="34.218971" />
+      <text
+         xml:space="preserve"
+         style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.264583"
+         x="56.735844"
+         y="40.599884"
+         id="text1273-7"><tspan
+           sodipodi:role="line"
+           id="tspan1271-56"
+           style="stroke-width:0.264583"
+           x="56.735844"
+           y="40.599884">Стек</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.264583"
+       x="47.885975"
+       y="55.633732"
+       id="text1405"><tspan
+         sodipodi:role="line"
+         id="tspan1403"
+         style="stroke-width:0.264583"
+         x="47.885975"
+         y="55.633732">push(13)</tspan></text>
+    <g
+       id="g1535"
+       transform="translate(-3.253608,-11.329475)">
+      <g
+         id="g1442-5"
+         transform="translate(-0.77864446,48.533827)">
+        <rect
+           style="fill:none;stroke:#000000;stroke-width:0.282492"
+           id="rect1217-2"
+           width="37.902237"
+           height="9.2037373"
+           x="43.117729"
+           y="34.218971" />
+        <text
+           xml:space="preserve"
+           style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.264583"
+           x="56.735844"
+           y="40.599884"
+           id="text1273-0"><tspan
+             sodipodi:role="line"
+             id="tspan1271-5"
+             style="stroke-width:0.264583"
+             x="56.735844"
+             y="40.599884">Стек</tspan></text>
+      </g>
+      <g
+         id="g1525"
+         transform="translate(-1.2235793)">
+        <rect
+           style="fill:none;stroke:#000000;stroke-width:0.365001"
+           id="rect1379"
+           width="20.450211"
+           height="6.4496818"
+           x="52.288677"
+           y="76.307823" />
+        <text
+           xml:space="preserve"
+           style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.264583"
+           x="59.584076"
+           y="81.315842"
+           id="text1483"><tspan
+             sodipodi:role="line"
+             id="tspan1481"
+             style="stroke-width:0.264583"
+             x="59.584076"
+             y="81.315842">13</tspan></text>
+      </g>
+    </g>
+    <g
+       id="g1535-4"
+       transform="translate(-3.253608,167.23406)">
+      <g
+         id="g1442-5-3"
+         transform="translate(-0.77864446,48.533827)">
+        <rect
+           style="fill:none;stroke:#000000;stroke-width:0.282492"
+           id="rect1217-2-7"
+           width="37.902237"
+           height="9.2037373"
+           x="43.117729"
+           y="34.218971" />
+        <text
+           xml:space="preserve"
+           style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.264583"
+           x="56.735844"
+           y="40.599884"
+           id="text1273-0-6"><tspan
+             sodipodi:role="line"
+             id="tspan1271-5-6"
+             style="stroke-width:0.264583"
+             x="56.735844"
+             y="40.599884">Стек</tspan></text>
+      </g>
+      <g
+         id="g1525-8"
+         transform="translate(-1.2235793)">
+        <rect
+           style="fill:none;stroke:#000000;stroke-width:0.365001"
+           id="rect1379-7"
+           width="20.450211"
+           height="6.4496818"
+           x="52.288677"
+           y="76.307823" />
+        <text
+           xml:space="preserve"
+           style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.264583"
+           x="59.584076"
+           y="81.315842"
+           id="text1483-5"><tspan
+             sodipodi:role="line"
+             id="tspan1481-4"
+             style="stroke-width:0.264583"
+             x="59.584076"
+             y="81.315842">13</tspan></text>
+      </g>
+    </g>
+    <g
+       id="g1442-5-5"
+       transform="translate(-2.6696307,86.200334)" />
+    <g
+       id="g2227"
+       transform="translate(-1.8075605,-11.388668)">
+      <g
+         id="g1442-5-7"
+         transform="translate(-2.224692,92.283602)">
+        <rect
+           style="fill:none;stroke:#000000;stroke-width:0.282492"
+           id="rect1217-2-1"
+           width="37.902237"
+           height="9.2037373"
+           x="43.117729"
+           y="34.218971" />
+        <text
+           xml:space="preserve"
+           style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.264583"
+           x="56.735844"
+           y="40.599884"
+           id="text1273-0-9"><tspan
+             sodipodi:role="line"
+             id="tspan1271-5-9"
+             style="stroke-width:0.264583"
+             x="56.735844"
+             y="40.599884">Стек</tspan></text>
+      </g>
+      <g
+         id="g1525-3"
+         transform="translate(-2.669627,43.749775)">
+        <rect
+           style="fill:none;stroke:#000000;stroke-width:0.365001"
+           id="rect1379-5"
+           width="20.450211"
+           height="6.4496818"
+           x="52.288677"
+           y="76.307823" />
+        <text
+           xml:space="preserve"
+           style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.264583"
+           x="59.584076"
+           y="81.315842"
+           id="text1483-0"><tspan
+             sodipodi:role="line"
+             id="tspan1481-1"
+             style="stroke-width:0.264583"
+             x="59.584076"
+             y="81.315842">13</tspan></text>
+      </g>
+      <g
+         id="g1842"
+         transform="translate(-53.392546,14.460483)">
+        <rect
+           style="fill:none;stroke:#000000;stroke-width:0.365001"
+           id="rect1379-9-5"
+           width="20.450211"
+           height="6.4496818"
+           x="103.0116"
+           y="99.110886" />
+        <text
+           xml:space="preserve"
+           style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.264583"
+           x="110.307"
+           y="104.1189"
+           id="text1483-6-2"><tspan
+             sodipodi:role="line"
+             id="tspan1481-0-7"
+             style="stroke-width:0.264583"
+             x="110.307"
+             y="104.1189">40</tspan></text>
+      </g>
+    </g>
+    <g
+       id="g2227-0"
+       transform="translate(-1.8075605,84.379329)">
+      <g
+         id="g1442-5-7-7"
+         transform="translate(-2.224692,92.283602)">
+        <rect
+           style="fill:none;stroke:#000000;stroke-width:0.282492"
+           id="rect1217-2-1-6"
+           width="37.902237"
+           height="9.2037373"
+           x="43.117729"
+           y="34.218971" />
+        <text
+           xml:space="preserve"
+           style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.264583"
+           x="56.735844"
+           y="40.599884"
+           id="text1273-0-9-0"><tspan
+             sodipodi:role="line"
+             id="tspan1271-5-9-4"
+             style="stroke-width:0.264583"
+             x="56.735844"
+             y="40.599884">Стек</tspan></text>
+      </g>
+      <g
+         id="g1525-3-5"
+         transform="translate(-2.669627,43.749775)">
+        <rect
+           style="fill:none;stroke:#000000;stroke-width:0.365001"
+           id="rect1379-5-2"
+           width="20.450211"
+           height="6.4496818"
+           x="52.288677"
+           y="76.307823" />
+        <text
+           xml:space="preserve"
+           style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.264583"
+           x="59.584076"
+           y="81.315842"
+           id="text1483-0-5"><tspan
+             sodipodi:role="line"
+             id="tspan1481-1-9"
+             style="stroke-width:0.264583"
+             x="59.584076"
+             y="81.315842">13</tspan></text>
+      </g>
+      <g
+         id="g1842-81"
+         transform="translate(-53.392546,14.460483)">
+        <rect
+           style="fill:none;stroke:#000000;stroke-width:0.365001"
+           id="rect1379-9-5-4"
+           width="20.450211"
+           height="6.4496818"
+           x="103.0116"
+           y="99.110886" />
+        <text
+           xml:space="preserve"
+           style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.264583"
+           x="110.307"
+           y="104.1189"
+           id="text1483-6-2-60"><tspan
+             sodipodi:role="line"
+             id="tspan1481-0-7-6"
+             style="stroke-width:0.264583"
+             x="110.307"
+             y="104.1189">40</tspan></text>
+      </g>
+    </g>
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text1833"
+       style="font-size:21.3333px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';white-space:pre;shape-inside:url(#rect1835);display:inline" />
+    <g
+       id="g2213"
+       transform="translate(0.08342652,-7.7425134)">
+      <g
+         id="g1983"
+         transform="translate(-46.384783,21.357022)">
+        <rect
+           style="fill:none;stroke:#000000;stroke-width:0.365001"
+           id="rect1379-9-6"
+           width="20.450211"
+           height="6.4496818"
+           x="94.112846"
+           y="132.25877" />
+        <text
+           xml:space="preserve"
+           style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.264583"
+           x="101.40824"
+           y="137.26678"
+           id="text1483-6-3"><tspan
+             sodipodi:role="line"
+             id="tspan1481-0-1"
+             style="stroke-width:0.264583"
+             x="101.40824"
+             y="137.26678">25</tspan></text>
+      </g>
+      <g
+         id="g1442-5-7-8"
+         transform="translate(-4.115679,138.81426)">
+        <rect
+           style="fill:none;stroke:#000000;stroke-width:0.282492"
+           id="rect1217-2-1-1"
+           width="37.902237"
+           height="9.2037373"
+           x="43.117729"
+           y="34.218971" />
+        <text
+           xml:space="preserve"
+           style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.264583"
+           x="56.735844"
+           y="40.599884"
+           id="text1273-0-9-2"><tspan
+             sodipodi:role="line"
+             id="tspan1271-5-9-0"
+             style="stroke-width:0.264583"
+             x="56.735844"
+             y="40.599884">Стек</tspan></text>
+      </g>
+      <g
+         id="g1525-3-9"
+         transform="translate(-4.5606138,90.280431)">
+        <rect
+           style="fill:none;stroke:#000000;stroke-width:0.365001"
+           id="rect1379-5-5"
+           width="20.450211"
+           height="6.4496818"
+           x="52.288677"
+           y="76.307823" />
+        <text
+           xml:space="preserve"
+           style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.264583"
+           x="59.584076"
+           y="81.315842"
+           id="text1483-0-1"><tspan
+             sodipodi:role="line"
+             id="tspan1481-1-7"
+             style="stroke-width:0.264583"
+             x="59.584076"
+             y="81.315842">13</tspan></text>
+      </g>
+      <g
+         id="g1842-8"
+         transform="translate(-55.283533,60.991139)">
+        <rect
+           style="fill:none;stroke:#000000;stroke-width:0.365001"
+           id="rect1379-9-5-8"
+           width="20.450211"
+           height="6.4496818"
+           x="103.0116"
+           y="99.110886" />
+        <text
+           xml:space="preserve"
+           style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.264583"
+           x="110.307"
+           y="104.1189"
+           id="text1483-6-2-6"><tspan
+             sodipodi:role="line"
+             id="tspan1481-0-7-3"
+             style="stroke-width:0.264583"
+             x="110.307"
+             y="104.1189">40</tspan></text>
+      </g>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.264583"
+       x="47.885975"
+       y="92.838081"
+       id="text1405-2"><tspan
+         sodipodi:role="line"
+         id="tspan1403-6"
+         style="stroke-width:0.264583"
+         x="47.885975"
+         y="92.838081">push(40)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.264583"
+       x="47.885975"
+       y="136.52867"
+       id="text1405-3"><tspan
+         sodipodi:role="line"
+         id="tspan1403-7"
+         style="stroke-width:0.264583"
+         x="47.885975"
+         y="136.52867">push(25)</tspan></text>
+    <g
+       id="g2932"
+       transform="translate(0,1.5069822)">
+      <g
+         id="g1983-9"
+         transform="translate(-7.5917313,49.211352)">
+        <rect
+           style="fill:none;stroke:#000000;stroke-width:0.365001"
+           id="rect1379-9-6-1"
+           width="20.450211"
+           height="6.4496818"
+           x="94.112846"
+           y="132.25877" />
+        <text
+           xml:space="preserve"
+           style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.264583"
+           x="101.40824"
+           y="137.26678"
+           id="text1483-6-3-9"><tspan
+             sodipodi:role="line"
+             id="tspan1481-0-1-8"
+             style="stroke-width:0.264583"
+             x="101.40824"
+             y="137.26678">25</tspan></text>
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.264583"
+         x="51.845074"
+         y="186.1488"
+         id="text2061"><tspan
+           sodipodi:role="line"
+           id="tspan2059"
+           style="stroke-width:0.264583"
+           x="51.845074"
+           y="186.1488">pop()</tspan></text>
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.465;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleStart)"
+         d="M 68.404803,184.69497 H 80.863064"
+         id="path2513" />
+    </g>
+    <g
+       id="g2961"
+       transform="translate(0,-2.0701236)">
+      <g
+         id="g1842-6"
+         transform="translate(-16.490482,131.52753)">
+        <rect
+           style="fill:none;stroke:#000000;stroke-width:0.365001"
+           id="rect1379-9-5-2"
+           width="20.450211"
+           height="6.4496818"
+           x="103.0116"
+           y="99.110886" />
+        <text
+           xml:space="preserve"
+           style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.264583"
+           x="110.307"
+           y="104.1189"
+           id="text1483-6-2-5"><tspan
+             sodipodi:role="line"
+             id="tspan1481-0-7-4"
+             style="stroke-width:0.264583"
+             x="110.307"
+             y="104.1189">40</tspan></text>
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.264583"
+         x="51.845074"
+         y="235.31709"
+         id="text2061-1"><tspan
+           sodipodi:role="line"
+           id="tspan2059-4"
+           style="stroke-width:0.264583"
+           x="51.845074"
+           y="235.31709">pop()</tspan></text>
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.465;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleStart-8)"
+         d="M 68.404803,233.86326 H 80.863064"
+         id="path2513-1" />
+    </g>
+    <g
+       id="g2990"
+       transform="translate(0,0.95018893)">
+      <g
+         id="g2457"
+         transform="translate(-13.39501,199.314)">
+        <rect
+           style="fill:none;stroke:#000000;stroke-width:0.365001"
+           id="rect1379-9"
+           width="20.450211"
+           height="6.4496818"
+           x="100.23074"
+           y="67.409058" />
+        <text
+           xml:space="preserve"
+           style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.264583"
+           x="107.52614"
+           y="72.417076"
+           id="text1483-6"><tspan
+             sodipodi:role="line"
+             id="tspan1481-0"
+             style="stroke-width:0.264583"
+             x="107.52614"
+             y="72.417076">13</tspan></text>
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.264583"
+         x="51.845074"
+         y="271.40173"
+         id="text2061-4"><tspan
+           sodipodi:role="line"
+           id="tspan2059-6"
+           style="stroke-width:0.264583"
+           x="51.845074"
+           y="271.40173">pop()</tspan></text>
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.465;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleStart-4)"
+         d="M 68.719422,270.41104 H 81.177683"
+         id="path2513-5" />
+    </g>
+  </g>
+</svg>

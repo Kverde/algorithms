@@ -1,14 +1,16 @@
+import shutil
 import os
 from typing import Iterator
 
 
-def list_files(path: str) -> Iterator[str]:
+def list_files(path: str, ext: str = '') -> Iterator[str]:
     """Возвращает все файлы по заданному пути path
        включая поддиректории
     """
     for (root, _, files) in os.walk(path):
         for filename in files:
-            yield os.path.join(root, filename)
+            if filename.endswith(ext):
+                yield os.path.join(root, filename)
 
 
 def read_file(path: str) -> str:
@@ -26,3 +28,7 @@ def write_file(path: str, content: str) -> None:
 
 def fixture(name: str) -> str:
     return os.path.join('site_builder', 'fixtures', name)
+
+
+def copy_dir(source: str, dest: str) -> None:
+    shutil.copytree(source, dest, dirs_exist_ok=True)

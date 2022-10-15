@@ -4,4 +4,5 @@
 
 [[toc]]
 
+* [Стек (Stack)](stack.md)
 * [Programming with abstract data types (1974, Liskov)](original/programming-with-abstract-data-types.md)
