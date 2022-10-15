@@ -24,7 +24,7 @@ class SiteBuilder:
 
         for page in self.pages:
             title = page.metadata['title']
-            url = page.rel_filename
+            url = page.link
             link = f'* [{title}]({url})'
             links.append(link)
 
@@ -43,6 +43,8 @@ class Page:
             self.base_path, self.folder, self.filename)
 
         self.rel_filename = os.path.join(self.folder, self.filename)
+
+        self.link = '/'.join(self.rel_filename.split(os.sep))
 
         self.read_page()
 
