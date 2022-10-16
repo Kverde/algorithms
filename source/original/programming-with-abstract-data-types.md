@@ -18,6 +18,8 @@ Cambridge, Massachusetts}}
 
 [Source](https://dl.acm.org/doi/pdf/10.1145/942572.807045).
 
+[[toc]]
+
 ## Abstract
 
 The motivation behind the work in very-high-level languages is to ease the programming task by providing the programmer with a language containing primitives or abstractions suitable to his problem area. The programmer is then able to spend his effort in the right place; he concentrates on solving his problem, and the resulting program will be more reliable as a result. Clearly, this is a worthwhile goal.
@@ -149,7 +151,7 @@ return;
 end Polish_gen
 ```
 
-_Figure 1_
+{{center+em|Figure 1}}
 
 The language is strongly typed; thus there are only three ways in which an abstract object can be used:
 
@@ -200,7 +202,7 @@ scan: procedure(input: infile,
 end scan
 ```
 
-_Figure 2_
+{{center+em|Figure 2}}
 
 We have explained that objects can be created in conjunction with variable declaration. It is also possible for objects to be created independently of variable declaration. Object creation is specified (whether inside a declaration or not) by the appearance of the type-name followed by parentheses. For example, in the last line of scan
 
@@ -280,7 +282,7 @@ stack: cluster(element_type: type)
 end stack
 ```
 
-_Figure 3_
+{{center+em|Figure 3}}
 
 **Object Representation**. Users of the abstract data type view objects of that type as indivisible entities. Inside the cluster, however, objects are viewed as decomposable into elements of more primitive type. The **rep description**
 
