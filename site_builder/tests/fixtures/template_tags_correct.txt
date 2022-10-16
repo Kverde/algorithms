@@ -10,4 +10,6 @@ Cambridge, Massachusetts</p>
 
 Hello <em>italic</em> end
 
+<p class="alg-center"><em>figure1</em></p>
+
 [Source](https://dl.acm.org/doi/pdf/10.1145/942572.807045).
