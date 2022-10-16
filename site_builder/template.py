@@ -10,15 +10,24 @@ def center(text: str) -> str:
     return f'<p class="alg-center">{text}</p>'
 
 
+def em(text: str) -> str:
+    return f'<em>{text}</em>'
+
+
+TEMPLEATES = {
+    'center': center,
+    'em': em,
+}
+
+
 def field_1(match):
     template_name = match.group(1)
     content = match.group(2)
 
-    match template_name:
-        case 'center':
-            return center(content)
-        case name:
-            raise TemplateError(f'Template {name} not found')
+    if template_name not in TEMPLEATES:
+        raise TemplateError(f'Template {template_name} not found')
+
+    return TEMPLEATES[template_name](content)
 
 
 def prepare(text: str) -> str:
