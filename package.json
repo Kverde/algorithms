@@ -18,5 +18,8 @@
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
+  },
+  "dependencies": {
+    "markdown-it-attrs": "^4.1.4"
   }
 }

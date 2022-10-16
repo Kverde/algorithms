@@ -61,6 +61,7 @@ module.exports = {
 
   extendsMarkdown: (md) => {
     md.use(require("markdown-it-footnote"));
+    md.use(require("markdown-it-attrs"));
     md.use(require("markdown-it-multimd-table"), {
       multiline: true,
       rowspan: true,
