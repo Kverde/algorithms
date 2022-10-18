@@ -5,3 +5,5 @@ docs/.vuepress/dist
 
 .venv
 __pycache__
+
+.ztr-directory

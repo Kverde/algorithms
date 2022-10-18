@@ -4,11 +4,7 @@
 
 [[toc]]
 
-## Абстрактный тип данных
-
-* [Стек (Stack)](stack.md)
-
 ## Оригинальные работы
 
-* [Programming with abstract data types (1974, Liskov)](original/programming-with-abstract-data-types.md)
+* [Programming with abstract data types (1974, Liskov)](20221017223629.md)
 

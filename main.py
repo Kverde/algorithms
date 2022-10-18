@@ -1,7 +1,7 @@
 import os
 import shutil
 
-from site_builder.page import SiteBuilder
+from site_builder.site_builder import SiteBuilder
 from site_builder.utils import copy_dir
 
 SOURCE_PATH = os.path.join('.', 'source')
