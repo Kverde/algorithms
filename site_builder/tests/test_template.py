@@ -14,13 +14,13 @@ def fixture(name: str) -> str:
 
 
 def check(check_name: str):
-    assert prepare(fixture(check_name + '_source.txt')
-                   ) == fixture(check_name + '_correct.txt')
+    assert prepare(fixture(check_name + '.txt')
+                   ) == fixture(check_name + '_ok.txt')
 
 
 class TestPrepare():
-    def test_frontmatter(self):
-        check('template_frontmatter')
-
     def test_tag(self):
-        check('template_tags')
+        check('templ_tag')
+
+    def test_link(self):
+        check('templ_link')

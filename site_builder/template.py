@@ -37,7 +37,14 @@ def process_template(match):
     return content
 
 
+def replace_links(text: str) -> str:
+    return re.sub(r'\[\[(\d+)\]\]', r'\1.md', text)
+
+
 def prepare(text: str) -> str:
     result = re.sub(r"{{([\w+]*)\|(.*?)}}", process_template,
                     text, flags=re.MULTILINE | re.DOTALL)
+
+    result = replace_links(result)
+
     return result
