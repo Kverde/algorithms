@@ -12,6 +12,7 @@ from site_builder.utils import list_files, read_file, write_file, fixture
 from site_builder.template import prepare
 from site_builder.file import File
 from site_builder.page import Page
+from site_builder.bibref import BibRef, RefDict
 
 
 class WrongSettig(Exception):
@@ -19,8 +20,12 @@ class WrongSettig(Exception):
 
 
 class SiteBuilder:
-    def __init__(self, site_path: str, settings_path: str) -> None:
+    def __init__(self, site_path: str) -> None:
+        settings_path: str = os.path.join(site_path, 'settings.yml')
+        bib_path: str = os.path.join(site_path, '_bib.yml')
+
         self.load_settings(settings_path)
+        self.load_bib(bib_path)
 
         self.pages = []
 
@@ -36,6 +41,15 @@ class SiteBuilder:
 
         self.page_type_title = settings['page_type_title']
 
+    def load_bib(self, bib_path: str) -> None:
+        yaml = YAML(typ="safe")
+        bib_source = yaml.load(read_file(bib_path))
+        bib = {}
+        for id, item in bib_source.items():
+            bib[id] = BibRef(id, item['title'], item['type'])
+
+        self.bib = bib
+
     def check_page(self, page: Page) -> None:
         page_type = page.metadata['page_type']
 
@@ -46,7 +60,7 @@ class SiteBuilder:
     def build(self, path: str) -> None:
         for page in self.pages:
             dest_filename = os.path.join(path, page.file.rel_filename)
-            write_file(dest_filename, page.prepare())
+            write_file(dest_filename, page.prepare(self.bib))
 
         self.build_index(path)
 

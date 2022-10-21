@@ -10,11 +10,9 @@ DEST_PATH = os.path.join('.', 'docs')
 SOURCE_IMAGE_PATH = os.path.join(SOURCE_PATH, 'images')
 DEST_IMAGE_PATH = os.path.join(DEST_PATH, '.vuepress', 'public', 'images')
 
-SETTINGS_PATH = os.path.join(SOURCE_PATH, 'settings.yml')
-
 
 def main():
-    site_builder = SiteBuilder(SOURCE_PATH, SETTINGS_PATH)
+    site_builder = SiteBuilder(SOURCE_PATH)
     site_builder.build(DEST_PATH)
     copy_dir(SOURCE_IMAGE_PATH, DEST_IMAGE_PATH)
 

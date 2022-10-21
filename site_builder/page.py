@@ -1,3 +1,4 @@
+from typing import Optional
 import os
 import re
 
@@ -7,6 +8,7 @@ import frontmatter
 # custom
 from site_builder.template import prepare
 from site_builder.file import File
+from site_builder.bibref import RefDict
 
 
 class WrongPageFile(Exception):
@@ -34,5 +36,5 @@ class Page:
     def __str__(self) -> str:
         return self.link
 
-    def prepare(self) -> str:
-        return prepare(self.content)
+    def prepare(self, ref: Optional[RefDict] = None) -> str:
+        return prepare(self.content, ref)
