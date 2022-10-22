@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="189.20377mm"
+   height="42.964672mm"
+   viewBox="0 0 189.20377 42.964672"
+   version="1.1"
+   id="svg6316"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   sodipodi:docname="fifo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview6318"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.1893044"
+     inkscape:cx="188.7658"
+     inkscape:cy="49.188416"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs6313">
+    <marker
+       style="overflow:visible"
+       id="TriangleStart-2"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="TriangleStart"
+       markerWidth="5.3244081"
+       markerHeight="6.155385"
+       viewBox="0 0 5.3244081 6.1553851"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path135-3" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="TriangleStart"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="TriangleStart"
+       markerWidth="5.3244081"
+       markerHeight="6.155385"
+       viewBox="0 0 5.3244081 6.1553851"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path135" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-5.2469847,-197.24222)">
+    <g
+       id="g2736"
+       transform="translate(40.75193,100.06912)">
+      <rect
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.503612;stroke-opacity:1"
+         id="rect2677"
+         width="32.567108"
+         height="8.8134012"
+         x="12.50405"
+         y="102.64228" />
+      <text
+         xml:space="preserve"
+         style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.264583"
+         x="26.543947"
+         y="109.50085"
+         id="text2681"><tspan
+           sodipodi:role="line"
+           id="tspan2679"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
+           x="26.543947"
+           y="109.50085">A</tspan></text>
+    </g>
+    <g
+       id="g2736-7"
+       transform="translate(79.016594,100.06912)">
+      <g
+         id="g2778">
+        <rect
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.503612;stroke-opacity:1"
+           id="rect2677-7"
+           width="32.567108"
+           height="8.8134012"
+           x="12.50405"
+           y="102.64228" />
+        <text
+           xml:space="preserve"
+           style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.264583"
+           x="26.519526"
+           y="109.50085"
+           id="text2681-4"><tspan
+             sodipodi:role="line"
+             id="tspan2679-7"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
+             x="26.519526"
+             y="109.50085">B</tspan></text>
+      </g>
+    </g>
+    <g
+       id="g2832"
+       transform="translate(154.16168,156.73642)">
+      <rect
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.503612;stroke-opacity:1"
+         id="rect2677-7-3"
+         width="32.567108"
+         height="8.8134012"
+         x="7.4701533"
+         y="74.405266" />
+      <text
+         xml:space="preserve"
+         style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.264583"
+         x="21.606897"
+         y="81.26384"
+         id="text2681-4-4"><tspan
+           sodipodi:role="line"
+           id="tspan2679-7-0"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
+           x="21.606897"
+           y="81.26384">C</tspan></text>
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.065;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleStart)"
+       d="M 43.782409,205.39785 C 18.397461,203.06439 13.805462,204.6637 7.7066483,221.89297"
+       id="path2888"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.065;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleStart-2)"
+       d="m 177.98906,228.59074 c -1.5303,-17.9109 -10.771,-20.99273 -32.2082,-21.61653"
+       id="path2888-0"
+       sodipodi:nodetypes="cc" />
+    <path
+       id="rect6923"
+       style="color:#000000;fill:#000000"
+       d="m 43.826265,197.24222 v 1.11932 H 145.7172 v -1.11932 z m 0,18.63298 v 1.11879 H 145.7172 v -1.11879 z" />
+  </g>
+</svg>

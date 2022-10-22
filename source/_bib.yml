@@ -1,6 +1,12 @@
+BhargavaGrokaemAlgoritmy2018:
+  title: Грокаем алгоритмы. Адитья Бхаргава. Питер. 2018.
+  type: book
 LiskovProgrammingWithAbstractDataTypes1974:
   title: Programming with abstract data types. Barbara Liskov. 1974.
   type: article
 McConnellCodeComplete2014:
   title: Совершенный код. Стив Макконнелл. Второе издание. Русская редакция. 2014.
+  type: book
+WirthAlgorithmsAndDataStructures2010:
+  title: Алгоритмы и структуры данных. Новая версия для Оберона. Никлаус Вирт. ДМК Пресс. 2010.
   type: book
