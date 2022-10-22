@@ -34,46 +34,7 @@
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1" />
   <defs
-     id="defs6313">
-    <marker
-       style="overflow:visible"
-       id="TriangleStart-2"
-       refX="0"
-       refY="0"
-       orient="auto-start-reverse"
-       inkscape:stockid="TriangleStart"
-       markerWidth="5.3244081"
-       markerHeight="6.155385"
-       viewBox="0 0 5.3244081 6.1553851"
-       inkscape:isstock="true"
-       inkscape:collect="always"
-       preserveAspectRatio="xMidYMid">
-      <path
-         transform="scale(0.5)"
-         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
-         d="M 5.77,0 -2.88,5 V -5 Z"
-         id="path135-3" />
-    </marker>
-    <marker
-       style="overflow:visible"
-       id="TriangleStart"
-       refX="0"
-       refY="0"
-       orient="auto-start-reverse"
-       inkscape:stockid="TriangleStart"
-       markerWidth="5.3244081"
-       markerHeight="6.155385"
-       viewBox="0 0 5.3244081 6.1553851"
-       inkscape:isstock="true"
-       inkscape:collect="always"
-       preserveAspectRatio="xMidYMid">
-      <path
-         transform="scale(0.5)"
-         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
-         d="M 5.77,0 -2.88,5 V -5 Z"
-         id="path135" />
-    </marker>
-  </defs>
+     id="defs6313" />
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
@@ -148,16 +109,48 @@
            x="21.606897"
            y="81.26384">C</tspan></text>
     </g>
-    <path
-       style="fill:none;stroke:#000000;stroke-width:1.065;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleStart)"
-       d="M 43.782409,205.39785 C 18.397461,203.06439 13.805462,204.6637 7.7066483,221.89297"
-       id="path2888"
-       sodipodi:nodetypes="cc" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:1.065;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleStart-2)"
-       d="m 177.98906,228.59074 c -1.5303,-17.9109 -10.771,-20.99273 -32.2082,-21.61653"
-       id="path2888-0"
-       sodipodi:nodetypes="cc" />
+    <g
+       id="path2888">
+      <path
+         style="color:#000000;fill:#000000;-inkscape-stroke:none"
+         d="m 28.275391,204.02734 c -4.136686,0.0917 -7.345053,0.62234 -9.980469,1.79493 -2.635416,1.17258 -4.665788,3.00198 -6.392578,5.60156 -1.726791,2.59958 -3.1664145,5.96633 -4.6972659,10.29101 l 1.0039063,0.35547 c 1.5185524,-4.28994 2.9392546,-7.58354 4.5820316,-10.05664 1.642777,-2.4731 3.489451,-4.12758 5.9375,-5.2168 4.896097,-2.17843 12.327355,-2.03458 25.005859,-0.86914 l 0.09766,-1.06054 c -6.353209,-0.58401 -11.419955,-0.93152 -15.55664,-0.83985 z"
+         id="path18784" />
+      <g
+         id="g18774">
+        <g
+           id="path18776">
+          <path
+             style="color:#000000;fill:#000000;fill-rule:evenodd;stroke-width:0.5325pt;-inkscape-stroke:none"
+             d="m 6.6813755,224.78939 -0.9728719,-5.23057 5.0197854,1.7769 z"
+             id="path18780" />
+          <path
+             style="color:#000000;fill:#000000;fill-rule:evenodd;-inkscape-stroke:none"
+             d="m 5.2460937,219.01953 1.1992188,6.43945 0.4667969,-0.40039 4.5136716,-3.85156 z m 0.9238282,1.07813 3.8613281,1.36718 -3.1132813,2.65625 z"
+             id="path18782" />
+        </g>
+      </g>
+    </g>
+    <g
+       id="path2888-0">
+      <path
+         style="color:#000000;fill:#000000;-inkscape-stroke:none"
+         d="m 145.79687,206.44141 -0.0312,1.06445 c 10.69533,0.31122 18.28967,1.25897 23.3125,4.25195 5.02284,2.99299 7.62323,8.01147 8.38086,16.87891 l 1.06055,-0.0918 c -0.77267,-9.04344 -3.55711,-14.52152 -8.89648,-17.70312 -5.33938,-3.1816 -13.08432,-4.08782 -23.82618,-4.40039 z"
+         id="path18764" />
+      <g
+         id="g18754">
+        <g
+           id="path18756">
+          <path
+             style="color:#000000;fill:#000000;fill-rule:evenodd;stroke-width:0.5325pt;-inkscape-stroke:none"
+             d="m 142.70963,206.88484 4.68162,-2.5274 -0.15488,5.32275 z"
+             id="path18760" />
+          <path
+             style="color:#000000;fill:#000000;fill-rule:evenodd;-inkscape-stroke:none"
+             d="M 147.76367,203.75195 142,206.86328 l 0.52344,0.32422 5.05078,3.11719 z m -0.74414,1.21094 -0.12109,4.0918 -3.47852,-2.14844 z"
+             id="path18762" />
+        </g>
+      </g>
+    </g>
     <path
        id="rect6923"
        style="color:#000000;fill:#000000"
