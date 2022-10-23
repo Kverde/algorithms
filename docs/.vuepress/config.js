@@ -1,8 +1,15 @@
-module.exports = {
+// const { katexPlugin } = require("@renovamen/vuepress-plugin-katex");
+import { defaultTheme } from "@vuepress/theme-default";
+import md_footnote from "markdown-it-footnote";
+import md_attrs from "markdown-it-attrs";
+import md_table from "markdown-it-multimd-table";
+
+export default {
   lang: "ru-RU",
   title: "Алгоритмы",
   base: "/",
   description: "Сайт про алгоритмы",
+  // plugins: [katexPlugin()],
   head: [
     ["meta", { name: "theme-color", content: "#ffffff" }],
     ["link", { rel: "icon", href: "/assets/favicons/favicon.svg" }],
@@ -49,7 +56,7 @@ module.exports = {
     ],
     // <!-- /revisionme -->
   ],
-  themeConfig: {
+  theme: defaultTheme({
     sidebar: false,
     contributors: false,
     lastUpdatedText: "Последниее изменение",
@@ -57,12 +64,12 @@ module.exports = {
       { text: "Главная", link: "/" },
       { text: "Контакты", link: "/contacts.md" },
     ],
-  },
+  }),
 
   extendsMarkdown: (md) => {
-    md.use(require("markdown-it-footnote"));
-    md.use(require("markdown-it-attrs"));
-    md.use(require("markdown-it-multimd-table"), {
+    md.use(md_footnote);
+    md.use(md_attrs);
+    md.use(md_table, {
       multiline: true,
       rowspan: true,
       headerless: true,
