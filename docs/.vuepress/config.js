@@ -1,15 +1,15 @@
-// const { katexPlugin } = require("@renovamen/vuepress-plugin-katex");
 import { defaultTheme } from "@vuepress/theme-default";
+
 import md_footnote from "markdown-it-footnote";
 import md_attrs from "markdown-it-attrs";
 import md_table from "markdown-it-multimd-table";
+import md_katex from "markdown-it-katex";
 
 export default {
   lang: "ru-RU",
   title: "Алгоритмы",
   base: "/",
   description: "Сайт про алгоритмы",
-  // plugins: [katexPlugin()],
   head: [
     ["meta", { name: "theme-color", content: "#ffffff" }],
     ["link", { rel: "icon", href: "/assets/favicons/favicon.svg" }],
@@ -29,6 +29,13 @@ export default {
       },
     ],
     ["link", { rel: "manifest", href: "manifest.json" }],
+    [
+      "link",
+      {
+        rel: "stylesheet",
+        href: "https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css",
+      },
+    ],
 
     // <!-- revisionme -->
     [
@@ -68,6 +75,7 @@ export default {
 
   extendsMarkdown: (md) => {
     md.use(md_footnote);
+    md.use(md_katex);
     md.use(md_attrs);
     md.use(md_table, {
       multiline: true,
