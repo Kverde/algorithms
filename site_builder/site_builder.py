@@ -21,8 +21,8 @@ class WrongSettig(Exception):
 
 class SiteBuilder:
     def __init__(self, site_path: str) -> None:
-        settings_path: str = os.path.join(site_path, 'settings.yml')
-        bib_path: str = os.path.join(site_path, '_bib.yml')
+        settings_path: str = os.path.join(site_path, 'data', 'settings.yml')
+        bib_path: str = os.path.join(site_path, 'data', '_bib.yml')
 
         self.load_settings(settings_path)
         self.load_bib(bib_path)
