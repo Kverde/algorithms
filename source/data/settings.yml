@@ -1,5 +1,6 @@
 page_type_title:
   original: Оригинальные работы
-  abstract_data_type: Абстрактный тип данных
   concept: Концепции
+  abstract_data_type: Абстрактные типы данных
+  data_structure: Структуры данных
   algorithm: Алгоритмы

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="105.16939mm"
+   height="32.295723mm"
+   viewBox="0 0 105.16939 32.295723"
+   version="1.1"
+   id="svg2859"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   sodipodi:docname="linked_list03.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview2861"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.1893044"
+     inkscape:cx="131.16911"
+     inkscape:cy="42.461795"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2856">
+    <marker
+       style="overflow:visible"
+       id="TriangleStart-6"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="TriangleStart"
+       markerWidth="5.3244081"
+       markerHeight="6.155385"
+       viewBox="0 0 5.3244081 6.1553851"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path135-0" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker2450"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="TriangleStart"
+       markerWidth="5.3244081"
+       markerHeight="6.155385"
+       viewBox="0 0 5.3244081 6.1553851"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path2448" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-50.062748,-104.37344)">
+    <g
+       id="g2800"
+       transform="translate(21.598745,-20.027167)">
+      <text
+         xml:space="preserve"
+         style="font-size:4.9389px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.264583"
+         x="48.216877"
+         y="128.01106"
+         id="text589-1"><tspan
+           sodipodi:role="line"
+           id="tspan587-7"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
+           x="48.216877"
+           y="128.01106">Список с одним элементом</tspan></text>
+      <g
+         id="g2757">
+        <text
+           xml:space="preserve"
+           style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.264583"
+           x="121.50942"
+           y="147.83633"
+           id="text1571-1"><tspan
+             sodipodi:role="line"
+             id="tspan1569-1"
+             style="stroke-width:0.264583"
+             x="121.50942"
+             y="147.83633">None</tspan></text>
+        <g
+           id="g1578-5"
+           transform="translate(-24.070492,56.251576)">
+          <rect
+             style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.264583;stroke-opacity:1"
+             id="rect835-4-7-0"
+             width="28.064732"
+             height="10.488836"
+             x="52.666786"
+             y="84.579208" />
+          <text
+             xml:space="preserve"
+             style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.264583"
+             x="61.915985"
+             y="91.734962"
+             id="text738-0"><tspan
+               sodipodi:role="line"
+               id="tspan736-6"
+               style="stroke-width:0.264583"
+               x="61.915985"
+               y="91.734962">Link</tspan></text>
+        </g>
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.665;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleStart-6)"
+           d="M 56.786499,146.0752 H 73.461287"
+           id="path796-2" />
+        <g
+           id="g2604"
+           transform="translate(-3.9488244,-0.22246898)">
+          <g
+             id="g717-0"
+             transform="translate(-29.416841,105.02942)">
+            <g
+               id="g707-6"
+               transform="translate(-0.47193146)">
+              <rect
+                 style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.264583;stroke-opacity:1"
+                 id="rect835-4-7-2-2"
+                 width="28.064732"
+                 height="10.488836"
+                 x="109.61276"
+                 y="30.779415" />
+              <text
+                 xml:space="preserve"
+                 style="font-size:5.64444px;line-height:1.25;font-family:Wingdings;-inkscape-font-specification:'Wingdings, Normal';stroke-width:0.264583"
+                 x="118.29008"
+                 y="37.78083"
+                 id="text665-5"><tspan
+                   sodipodi:role="line"
+                   id="tspan663-4"
+                   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
+                   x="118.29008"
+                   y="37.78083">Data</tspan></text>
+            </g>
+            <g
+               id="g702-4"
+               transform="translate(0,-2.2532219)">
+              <rect
+                 style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.264583;stroke-opacity:1"
+                 id="rect835-4-7-2-1-8"
+                 width="28.064732"
+                 height="10.488836"
+                 x="109.14083"
+                 y="43.521473" />
+              <text
+                 xml:space="preserve"
+                 style="font-size:5.64444px;line-height:1.25;font-family:Wingdings;-inkscape-font-specification:'Wingdings, Normal';stroke-width:0.264583"
+                 x="118.39003"
+                 y="50.677227"
+                 id="text665-2-5"><tspan
+                   sodipodi:role="line"
+                   id="tspan663-7-7"
+                   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
+                   x="118.39003"
+                   y="50.677227">Link</tspan></text>
+            </g>
+          </g>
+          <path
+             style="fill:none;stroke:#000000;stroke-width:0.665;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker2450)"
+             d="m 107.78622,151.61261 h 8.10495 v -5.33926 h 5.52128"
+             id="path2446" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
