@@ -10,7 +10,7 @@ export default {
   title: "Алгоритмы",
   base: "/",
   description: "Сайт про алгоритмы",
-  head: [
+  /*  head: [
     ["meta", { name: "theme-color", content: "#ffffff" }],
     ["link", { rel: "icon", href: "/assets/favicons/favicon.svg" }],
     [
@@ -82,5 +82,5 @@ export default {
       rowspan: true,
       headerless: true,
     });
-  },
+  },*/
 };
