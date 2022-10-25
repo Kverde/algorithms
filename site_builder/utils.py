@@ -31,4 +31,5 @@ def fixture(name: str) -> str:
 
 
 def copy_dir(source: str, dest: str) -> None:
+    shutil.rmtree(dest)
     shutil.copytree(source, dest, dirs_exist_ok=True)
