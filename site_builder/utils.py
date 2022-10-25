@@ -33,3 +33,20 @@ def fixture(name: str) -> str:
 def copy_dir(source: str, dest: str) -> None:
     shutil.rmtree(dest)
     shutil.copytree(source, dest, dirs_exist_ok=True)
+
+
+def update_svg(path: str) -> None:
+    # Из-за ошибки https://bugzilla.mozilla.org/show_bug.cgi?id=752638
+    # необходимо обновение svg созданных в Inkscape
+    # для правильной работы в Firefox
+    for filename in list_files(path, '.svg'):
+        file = open(filename, 'r', encoding='utf-8')
+        content = file.read()
+
+        if 'style="fill:context-stroke;' in content:
+            content = content.replace(
+                'style="fill:context-stroke;', 'style="fill:#000;')
+            file.close()
+            file = open(filename, 'w', encoding='utf-8')
+            file.write(content)
+            file.close()
