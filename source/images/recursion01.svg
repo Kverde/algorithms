@@ -1,0 +1,990 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="495.88028mm"
+   height="373.07709mm"
+   viewBox="0 0 495.88028 373.07708"
+   version="1.1"
+   id="svg5165"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   sodipodi:docname="recursion01.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview5167"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.6819304"
+     inkscape:cx="1712.3182"
+     inkscape:cy="81.156746"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs5162">
+    <marker
+       style="overflow:visible"
+       id="marker6743"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="TriangleStart"
+       markerWidth="5.3244081"
+       markerHeight="6.155385"
+       viewBox="0 0 5.3244081 6.1553851"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path6741" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker6743-3"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="TriangleStart"
+       markerWidth="5.3244081"
+       markerHeight="6.155385"
+       viewBox="0 0 5.3244081 6.1553851"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path6741-3" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker6743-3-0"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="TriangleStart"
+       markerWidth="5.3244081"
+       markerHeight="6.155385"
+       viewBox="0 0 5.3244081 6.1553851"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path6741-3-6" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker6743-3-0-9"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="TriangleStart"
+       markerWidth="5.3244081"
+       markerHeight="6.155385"
+       viewBox="0 0 5.3244081 6.1553851"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path6741-3-6-6" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker6743-3-0-9-8"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="TriangleStart"
+       markerWidth="5.3244081"
+       markerHeight="6.155385"
+       viewBox="0 0 5.3244081 6.1553851"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path6741-3-6-6-8" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker6743-3-0-9-8-0"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="TriangleStart"
+       markerWidth="5.3244081"
+       markerHeight="6.155385"
+       viewBox="0 0 5.3244081 6.1553851"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path6741-3-6-6-8-7" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker6743-3-0-9-8-8"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="TriangleStart"
+       markerWidth="5.3244081"
+       markerHeight="6.155385"
+       viewBox="0 0 5.3244081 6.1553851"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path6741-3-6-6-8-9" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker6743-3-0-9-8-3"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="TriangleStart"
+       markerWidth="5.3244081"
+       markerHeight="6.155385"
+       viewBox="0 0 5.3244081 6.1553851"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path6741-3-6-6-8-4" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker6743-3-0-9-85"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="TriangleStart"
+       markerWidth="5.3244081"
+       markerHeight="6.155385"
+       viewBox="0 0 5.3244081 6.1553851"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path6741-3-6-6-3" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker6743-3-0-9-3"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="TriangleStart"
+       markerWidth="5.3244081"
+       markerHeight="6.155385"
+       viewBox="0 0 5.3244081 6.1553851"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path6741-3-6-6-7" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker6743-3-0-6"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="TriangleStart"
+       markerWidth="5.3244081"
+       markerHeight="6.155385"
+       viewBox="0 0 5.3244081 6.1553851"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path6741-3-6-0" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker6743-3-0-6-5"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="TriangleStart"
+       markerWidth="5.3244081"
+       markerHeight="6.155385"
+       viewBox="0 0 5.3244081 6.1553851"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path6741-3-6-0-8" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker6743-3-0-6-9"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="TriangleStart"
+       markerWidth="5.3244081"
+       markerHeight="6.155385"
+       viewBox="0 0 5.3244081 6.1553851"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path6741-3-6-0-2" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker6743-3-0-9-8-1"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="TriangleStart"
+       markerWidth="5.3244081"
+       markerHeight="6.155385"
+       viewBox="0 0 5.3244081 6.1553851"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path6741-3-6-6-8-0" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker6743-7"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="TriangleStart"
+       markerWidth="5.3244081"
+       markerHeight="6.155385"
+       viewBox="0 0 5.3244081 6.1553851"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path6741-8" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker6743-3-0-9-8-3-7"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="TriangleStart"
+       markerWidth="5.3244081"
+       markerHeight="6.155385"
+       viewBox="0 0 5.3244081 6.1553851"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path6741-3-6-6-8-4-3" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-14.023434,4.2958714)">
+    <text
+       xml:space="preserve"
+       style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.264583"
+       x="45.383675"
+       y="26.839424"
+       id="text5288"><tspan
+         sodipodi:role="line"
+         id="tspan5286"
+         style="stroke-width:0.264583"
+         x="45.383675"
+         y="26.839424">factorial01(3)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.264583"
+       x="479.00827"
+       y="25.253502"
+       id="text5288-4"><tspan
+         sodipodi:role="line"
+         id="tspan5286-6"
+         style="stroke-width:0.264583"
+         x="479.00827"
+         y="25.253502">6</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';fill:#241f1c;stroke:#241c1c;stroke-width:0.264583"
+       x="13.865739"
+       y="12.327248"
+       id="text3517"><tspan
+         id="tspan3515"
+         style="font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;font-size:5.64444px;font-family:Calibri;-inkscape-font-specification:'Calibri, Light Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#241f1c;stroke:#241c1c;stroke-width:0.264583"
+         x="13.865739"
+         y="12.327248"
+         sodipodi:role="line">Вызов функции</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';fill:#241f1c;stroke:#241c1c;stroke-width:0.264583"
+       x="461.01831"
+       y="-0.30507591"
+       id="text3517-7"><tspan
+         id="tspan3515-1"
+         style="font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;font-size:5.64444px;font-family:Calibri;-inkscape-font-specification:'Calibri, Light Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#241f1c;stroke:#241c1c;stroke-width:0.264583"
+         x="461.01831"
+         y="-0.30507591"
+         sodipodi:role="line">Результат функции</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.665;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker6743)"
+       d="m 53.691363,30.719804 c 0,0 -2.669628,26.362573 10.456041,24.805291"
+       id="path5470"
+       sodipodi:nodetypes="cc" />
+    <g
+       id="g6809"
+       transform="translate(0,-0.55058256)">
+      <rect
+         style="fill:#ffaaaa;stroke:#000000;stroke-width:0.564705;stroke-dasharray:none"
+         id="rect5524"
+         width="77.983032"
+         height="39.127625"
+         x="67.428238"
+         y="42.258751" />
+      <text
+         xml:space="preserve"
+         style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.264583"
+         x="71.301308"
+         y="49.165642"
+         id="text5292"><tspan
+           sodipodi:role="line"
+           id="tspan5290"
+           style="stroke-width:0.264583"
+           x="71.301308"
+           y="49.165642">def factorial01(3):</tspan><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.264583"
+           x="71.301308"
+           y="56.221191"
+           id="tspan5294">    if n == 0:</tspan><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.264583"
+           x="71.301308"
+           y="63.276741"
+           id="tspan5296">        return 1</tspan><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.264583"
+           x="71.301308"
+           y="70.332291"
+           id="tspan5298">    </tspan><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.264583"
+           x="71.301308"
+           y="77.38784"
+           id="tspan5300">    return 3 * factorial01(3 - 1)</tspan></text>
+    </g>
+    <g
+       id="g6800"
+       transform="translate(21.551377,-0.23596101)">
+      <rect
+         style="fill:#ffb380;stroke:#000000;stroke-width:0.564705;stroke-dasharray:none"
+         id="rect5524-1"
+         width="77.983032"
+         height="39.127625"
+         x="101.48571"
+         y="93.541588" />
+      <text
+         xml:space="preserve"
+         style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.264583"
+         x="106.90441"
+         y="100.49438"
+         id="text5292-4"><tspan
+           sodipodi:role="line"
+           id="tspan5290-3"
+           style="stroke-width:0.264583"
+           x="106.90441"
+           y="100.49438">def factorial01(2):</tspan><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.264583"
+           x="106.90441"
+           y="107.54993"
+           id="tspan5294-2">    if n == 0:</tspan><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.264583"
+           x="106.90441"
+           y="114.60548"
+           id="tspan5296-6">        return 1</tspan><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.264583"
+           x="106.90441"
+           y="121.66103"
+           id="tspan5298-2">    </tspan><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.264583"
+           x="106.90441"
+           y="128.71658"
+           id="tspan5300-8">    return 2 * factorial01(2 - 1)</tspan></text>
+    </g>
+    <g
+       id="g6818"
+       transform="translate(62.294492,0.3146161)">
+      <rect
+         style="fill:#ffdd55;stroke:#000000;stroke-width:0.564705;stroke-dasharray:none"
+         id="rect5524-8"
+         width="77.983032"
+         height="39.127625"
+         x="119.57628"
+         y="145.13905" />
+      <text
+         xml:space="preserve"
+         style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.264583"
+         x="125.75541"
+         y="151.55101"
+         id="text5292-4-7"><tspan
+           sodipodi:role="line"
+           id="tspan5290-3-4"
+           style="stroke-width:0.264583"
+           x="125.75541"
+           y="151.55101">def factorial01(1):</tspan><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.264583"
+           x="125.75541"
+           y="158.60657"
+           id="tspan5294-2-3">    if n == 0:</tspan><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.264583"
+           x="125.75541"
+           y="165.66211"
+           id="tspan5296-6-7">        return 1</tspan><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.264583"
+           x="125.75541"
+           y="172.71767"
+           id="tspan5298-2-9">    </tspan><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.264583"
+           x="125.75541"
+           y="179.77321"
+           id="tspan5300-8-6">    return 1 * factorial01(1 - 1)</tspan></text>
+    </g>
+    <g
+       id="g6827"
+       transform="translate(94.542903,2.2023305)">
+      <rect
+         style="fill:#00cdf1;fill-opacity:1;stroke:#000000;stroke-width:0.564705;stroke-dasharray:none"
+         id="rect5524-4"
+         width="77.983032"
+         height="39.127625"
+         x="146.79079"
+         y="193.2757" />
+      <text
+         xml:space="preserve"
+         style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.264583"
+         x="153.23033"
+         y="200.49419"
+         id="text5292-4-7-3"><tspan
+           sodipodi:role="line"
+           id="tspan5290-3-4-3"
+           style="stroke-width:0.264583"
+           x="153.23033"
+           y="200.49419">def factorial01(0):</tspan><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.264583"
+           x="153.23033"
+           y="207.54974"
+           id="tspan5294-2-3-8">    if n == 0:</tspan><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.264583"
+           x="153.23033"
+           y="214.60529"
+           id="tspan5296-6-7-5">        return 1</tspan><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.264583"
+           x="153.23033"
+           y="221.66084"
+           id="tspan5298-2-9-4">    </tspan><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.264583"
+           x="153.23033"
+           y="228.71638"
+           id="tspan5300-8-6-8">    return 0 * factorial01(0 - 1)</tspan></text>
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.665;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker6743-3)"
+       d="m 106.3538,79.340929 c 0,0 -2.66963,26.362571 10.45604,24.805291"
+       id="path5470-7"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.665;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker6743-3-0)"
+       d="m 165.65942,129.83722 c 0,0 -2.66963,26.36257 10.45604,24.80529"
+       id="path5470-7-8"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.665;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker6743-3-0-9)"
+       d="m 222.7627,181.27737 c 0,0 -2.66963,26.36257 10.45604,24.80529"
+       id="path5470-7-8-1"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.665;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker6743-3-0-9-85)"
+       d="m 219.46118,281.52229 c 0,0 12.01332,41.49046 25.13899,39.93318"
+       id="path5470-7-8-1-8"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';fill:#241f1c;stroke:#241c1c;stroke-width:0.264583"
+       x="60.485867"
+       y="199.3214"
+       id="text3517-3"><tspan
+         id="tspan3515-2"
+         style="font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;font-size:5.64444px;font-family:Calibri;-inkscape-font-specification:'Calibri, Light Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#241f1c;stroke:#241c1c;stroke-width:0.264583"
+         x="60.485867"
+         y="199.3214"
+         sodipodi:role="line">Каждый вызов функции порождает</tspan><tspan
+         style="font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;font-size:5.64444px;font-family:Calibri;-inkscape-font-specification:'Calibri, Light Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#241f1c;stroke:#241c1c;stroke-width:0.264583"
+         x="60.485867"
+         y="206.37695"
+         sodipodi:role="line"
+         id="tspan7832">  новый вычислительный процесс</tspan><tspan
+         style="font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;font-size:5.64444px;font-family:Calibri;-inkscape-font-specification:'Calibri, Light Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#241f1c;stroke:#241c1c;stroke-width:0.264583"
+         x="60.485867"
+         y="213.4325"
+         sodipodi:role="line"
+         id="tspan8979">    и запись на стеке вызовов</tspan><tspan
+         style="font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;font-size:5.64444px;font-family:Calibri;-inkscape-font-specification:'Calibri, Light Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#241f1c;stroke:#241c1c;stroke-width:0.264583"
+         x="60.485867"
+         y="220.48805"
+         sodipodi:role="line"
+         id="tspan7834" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';fill:#241f1c;stroke:#241c1c;stroke-width:0.264583"
+       x="170.40536"
+       y="269.59485"
+       id="text3517-3-4"><tspan
+         style="font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;font-size:5.64444px;font-family:Calibri;-inkscape-font-specification:'Calibri, Light Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#241f1c;stroke:#241c1c;stroke-width:0.264583"
+         x="170.40536"
+         y="269.59485"
+         sodipodi:role="line"
+         id="tspan7834-5">Состояние стека вызовов при </tspan><tspan
+         style="font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;font-size:5.64444px;font-family:Calibri;-inkscape-font-specification:'Calibri, Light Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#241f1c;stroke:#241c1c;stroke-width:0.264583"
+         x="170.40536"
+         y="276.65039"
+         sodipodi:role="line"
+         id="tspan8714">  вызове последней функции</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';fill:#241f1c;stroke:#241c1c;stroke-width:0.264583"
+       x="237.35913"
+       y="111.07308"
+       id="text3517-3-4-8"><tspan
+         style="font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;font-size:5.64444px;font-family:Calibri;-inkscape-font-specification:'Calibri, Light Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#241f1c;stroke:#241c1c;stroke-width:0.264583"
+         x="237.35913"
+         y="111.07308"
+         sodipodi:role="line"
+         id="tspan8714-0">Срабатывает условие выхода и</tspan><tspan
+         style="font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;font-size:5.64444px;font-family:Calibri;-inkscape-font-specification:'Calibri, Light Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#241f1c;stroke:#241c1c;stroke-width:0.264583"
+         x="237.35913"
+         y="118.12863"
+         sodipodi:role="line"
+         id="tspan8750">  процесс пошел в обратную сторону</tspan></text>
+    <g
+       id="g8977"
+       transform="translate(15.101695,0.94385594)">
+      <g
+         id="g8923"
+         transform="translate(23.911024,-41.84428)">
+        <rect
+           style="fill:none;stroke:#000000;stroke-width:0.568;stroke-dasharray:none"
+           id="rect557-6"
+           width="78.962784"
+           height="10.79817"
+           x="214.41585"
+           y="333.81039" />
+        <rect
+           style="fill:#cccccc;stroke:#000000;stroke-width:0.568;stroke-dasharray:none"
+           id="rect557"
+           width="78.962784"
+           height="10.79817"
+           x="214.41585"
+           y="323.01221" />
+        <text
+           xml:space="preserve"
+           style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.568;stroke-dasharray:none"
+           x="241.74985"
+           y="330.31436"
+           id="text721"><tspan
+             sodipodi:role="line"
+             id="tspan719"
+             style="stroke-width:0.568;stroke-dasharray:none"
+             x="241.74985"
+             y="330.31436">factorial01</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.264583"
+           x="248.26245"
+           y="340.99265"
+           id="text1306"><tspan
+             sodipodi:role="line"
+             id="tspan1304"
+             style="stroke-width:0.264583"
+             x="248.26245"
+             y="340.99265">n = 0</tspan></text>
+      </g>
+      <g
+         id="g8931"
+         transform="translate(25.169493,-47.619749)">
+        <rect
+           style="fill:none;stroke:#000000;stroke-width:0.568;stroke-dasharray:none"
+           id="rect557-6-7"
+           width="78.962784"
+           height="10.79817"
+           x="213.15738"
+           y="361.18222" />
+        <rect
+           style="fill:#cccccc;stroke:#000000;stroke-width:0.568;stroke-dasharray:none"
+           id="rect557-2"
+           width="78.962784"
+           height="10.79817"
+           x="213.15738"
+           y="350.38403" />
+        <text
+           xml:space="preserve"
+           style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.568;stroke-dasharray:none"
+           x="240.49138"
+           y="357.68619"
+           id="text721-2"><tspan
+             sodipodi:role="line"
+             id="tspan719-5"
+             style="stroke-width:0.568;stroke-dasharray:none"
+             x="240.49138"
+             y="357.68619">factorial01</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.264583"
+           x="247.00398"
+           y="368.36447"
+           id="text1306-0"><tspan
+             sodipodi:role="line"
+             id="tspan1304-2"
+             style="stroke-width:0.264583"
+             x="247.00398"
+             y="368.36447">n = 1</tspan></text>
+      </g>
+      <g
+         id="g8939"
+         transform="translate(20.135588,-53.080581)">
+        <rect
+           style="fill:none;stroke:#000000;stroke-width:0.568;stroke-dasharray:none"
+           id="rect557-6-3"
+           width="78.962784"
+           height="10.79817"
+           x="218.19128"
+           y="388.23941" />
+        <rect
+           style="fill:#cccccc;stroke:#000000;stroke-width:0.568;stroke-dasharray:none"
+           id="rect557-3"
+           width="78.962784"
+           height="10.79817"
+           x="218.19128"
+           y="377.44122" />
+        <text
+           xml:space="preserve"
+           style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.568;stroke-dasharray:none"
+           x="245.52528"
+           y="384.74338"
+           id="text721-8"><tspan
+             sodipodi:role="line"
+             id="tspan719-50"
+             style="stroke-width:0.568;stroke-dasharray:none"
+             x="245.52528"
+             y="384.74338">factorial01</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.264583"
+           x="252.03789"
+           y="395.42166"
+           id="text1306-6"><tspan
+             sodipodi:role="line"
+             id="tspan1304-93"
+             style="stroke-width:0.264583"
+             x="252.03789"
+             y="395.42166">n = 2</tspan></text>
+      </g>
+      <g
+         id="g8947"
+         transform="translate(27.057203,-61.058382)">
+        <rect
+           style="fill:none;stroke:#000000;stroke-width:0.568;stroke-dasharray:none"
+           id="rect557-6-9"
+           width="78.962784"
+           height="10.79817"
+           x="211.26967"
+           y="417.81357" />
+        <rect
+           style="fill:#cccccc;stroke:#000000;stroke-width:0.568;stroke-dasharray:none"
+           id="rect557-23"
+           width="78.962784"
+           height="10.79817"
+           x="211.26967"
+           y="407.01538" />
+        <text
+           xml:space="preserve"
+           style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.568;stroke-dasharray:none"
+           x="238.60367"
+           y="414.31754"
+           id="text721-06"><tspan
+             sodipodi:role="line"
+             id="tspan719-6"
+             style="stroke-width:0.568;stroke-dasharray:none"
+             x="238.60367"
+             y="414.31754">factorial01</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.264583"
+           x="245.11627"
+           y="424.99582"
+           id="text1306-8"><tspan
+             sodipodi:role="line"
+             id="tspan1304-23"
+             style="stroke-width:0.264583"
+             x="245.11627"
+             y="424.99582">n = 3</tspan></text>
+      </g>
+    </g>
+    <g
+       id="g6827-9"
+       transform="translate(156.8374,-47.822026)">
+      <rect
+         style="fill:#ffdd55;stroke:#000000;stroke-width:0.564705;stroke-dasharray:none"
+         id="rect5524-4-6"
+         width="77.983032"
+         height="39.127625"
+         x="146.79079"
+         y="193.2757" />
+      <text
+         xml:space="preserve"
+         style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.264583"
+         x="153.23033"
+         y="200.49419"
+         id="text5292-4-7-3-5"
+         transform="translate(1.1666666e-6)"><tspan
+           sodipodi:role="line"
+           id="tspan5290-3-4-3-6"
+           style="stroke-width:0.264583"
+           x="153.23033"
+           y="200.49419">def factorial01(1):</tspan><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.264583"
+           x="153.23033"
+           y="207.54974"
+           id="tspan5294-2-3-8-3">    if n == 0:</tspan><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.264583"
+           x="153.23033"
+           y="214.60529"
+           id="tspan5296-6-7-5-3">        return 1</tspan><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.264583"
+           x="153.23033"
+           y="221.66084"
+           id="tspan5298-2-9-4-0">    </tspan><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.264583"
+           x="153.23033"
+           y="228.71638"
+           id="tspan5300-8-6-8-6">    return 1 * 1</tspan></text>
+    </g>
+    <g
+       id="g6827-91"
+       transform="translate(214.098,-99.970069)">
+      <rect
+         style="fill:#ffb380;stroke:#000000;stroke-width:0.564705;stroke-dasharray:none"
+         id="rect5524-4-4"
+         width="77.983032"
+         height="39.127625"
+         x="146.79079"
+         y="193.2757" />
+      <text
+         xml:space="preserve"
+         style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.264583"
+         x="153.23033"
+         y="200.49419"
+         id="text5292-4-7-3-58"><tspan
+           sodipodi:role="line"
+           id="tspan5290-3-4-3-1"
+           style="stroke-width:0.264583"
+           x="153.23033"
+           y="200.49419">def factorial01(2):</tspan><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.264583"
+           x="153.23033"
+           y="207.54974"
+           id="tspan5294-2-3-8-0">    if n == 0:</tspan><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.264583"
+           x="153.23033"
+           y="214.60529"
+           id="tspan5296-6-7-5-4">        return 1</tspan><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.264583"
+           x="153.23033"
+           y="221.66084"
+           id="tspan5298-2-9-4-9">    </tspan><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.264583"
+           x="153.23033"
+           y="228.71638"
+           id="tspan5300-8-6-8-62">    return 2 * 1</tspan></text>
+    </g>
+    <g
+       id="g6827-99"
+       transform="translate(245.24524,-151.56753)">
+      <rect
+         style="fill:#ffaaaa;stroke:#000000;stroke-width:0.564705;stroke-dasharray:none"
+         id="rect5524-4-3"
+         width="77.983032"
+         height="39.127625"
+         x="146.79079"
+         y="193.2757" />
+      <text
+         xml:space="preserve"
+         style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.264583"
+         x="153.23033"
+         y="200.49419"
+         id="text5292-4-7-3-4"><tspan
+           sodipodi:role="line"
+           id="tspan5290-3-4-3-3"
+           style="stroke-width:0.264583"
+           x="153.23033"
+           y="200.49419">def factorial01(3):</tspan><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.264583"
+           x="153.23033"
+           y="207.54974"
+           id="tspan5294-2-3-8-1">    if n == 0:</tspan><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.264583"
+           x="153.23033"
+           y="214.60529"
+           id="tspan5296-6-7-5-8">        return 1</tspan><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.264583"
+           x="153.23033"
+           y="221.66084"
+           id="tspan5298-2-9-4-4">    </tspan><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.264583"
+           x="153.23033"
+           y="228.71638"
+           id="tspan5300-8-6-8-9">    return 3 * 2</tspan></text>
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.665;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker6743-3-0-9-8)"
+       d="m 286.07752,192.45527 c 0,0 2.33592,-26.80752 11.23468,-26.14011"
+       id="path5470-7-8-1-4"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.665;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker6743-3-0-9-8-0)"
+       d="m 344.20444,143.1522 c 0,0 2.33592,-26.80752 11.23468,-26.14011"
+       id="path5470-7-8-1-4-9"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.665;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker6743-3-0-9-8-8)"
+       d="m 375.12762,88.869765 c 0,0 2.33592,-26.80752 11.23468,-26.14011"
+       id="path5470-7-8-1-4-0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.665;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker6743-3-0-9-8-3)"
+       d="m 456.10633,39.926592 c 0,0 8.34258,-18.13123 17.24134,-17.46382"
+       id="path5470-7-8-1-4-6"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.665;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker6743-3-0-9-3)"
+       d="m 214.3444,261.94503 c 0,0 7.78641,-39.26578 20.91208,-40.82306"
+       id="path5470-7-8-1-2"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.665;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker6743-3-0-6)"
+       d="m 76.622341,186.62589 c 0,0 -8.262431,-87.704411 0.388243,-99.469078"
+       id="path5470-7-8-3"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.665;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker6743-3-0-6-5)"
+       d="m 101.41595,187.84392 c 0,0 10.30007,-38.93852 18.95074,-50.70318 m 3.92036,52.59909 c 0,0 35.15495,-11.88131 51.04185,-12.94894"
+       id="path5470-7-8-3-3"
+       sodipodi:nodetypes="cccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.665;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker6743-3-0-6-9)"
+       d="m 148.92337,205.14795 c 0,0 65.67295,12.65894 81.55985,11.90592"
+       id="path5470-7-8-3-9"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.665;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker6743-3-0-9-8-1)"
+       d="m 274.01068,127.69752 c 0,0 1.70669,54.36409 3.0546,62.58235"
+       id="path5470-7-8-1-4-8"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.665;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker6743-7)"
+       d="m 25.205096,15.000475 c 0,0 2.52158,12.362043 15.647249,10.804761"
+       id="path5470-2"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.665;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker6743-3-0-9-8-3-7)"
+       d="m 484.64172,3.590978 c 0,0 6.61218,8.139427 1.66772,13.998044"
+       id="path5470-7-8-1-4-6-5"
+       sodipodi:nodetypes="cc" />
+  </g>
+</svg>
