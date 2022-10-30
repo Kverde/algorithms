@@ -10,7 +10,7 @@ from site_builder.utils import list_files, read_file, write_file, fixture
 from site_builder.template import prepare
 from site_builder.file import File
 from site_builder.page import Page
-from site_builder.bibref import BibRef, RefDict
+from site_builder.bibref import BibRef, RefDict, load_refs_from_yaml
 
 
 class WrongSettig(Exception):
@@ -23,7 +23,7 @@ class SiteBuilder:
         bib_path: str = os.path.join(site_path, 'data', '_bib.yml')
 
         self.load_settings(settings_path)
-        self.load_bib(bib_path)
+        self.bib: RefDict = load_refs_from_yaml(read_file(bib_path))
 
         self.pages = []
 
@@ -38,20 +38,6 @@ class SiteBuilder:
         settings = yaml.load(read_file(settings_path))
 
         self.page_type_title = settings['page_type_title']
-
-    def load_bib(self, bib_path: str) -> None:
-        yaml = YAML(typ="safe")
-        bib_source = yaml.load(read_file(bib_path))
-        bib = {}
-        for id, item in bib_source.items():
-            bib[id] = BibRef(
-                id=id,
-                title=item['title'],
-                type=item['type'],
-                link=item.get('link')
-            )
-
-        self.bib = bib
 
     def check_page(self, page: Page) -> None:
         page_type = page.metadata['page_type']
