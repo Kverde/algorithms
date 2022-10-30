@@ -80,3 +80,19 @@ class SiteBuilder:
         index_page = index_page.replace('[[content]]', content)
         index_page = index_page.replace('[[stats]]', stats)
         write_file(os.path.join(path, 'readme.md'), index_page)
+
+        books_page = read_file(fixture('books.md'))
+        content_lines = []
+        for book_id, book in self.bib.items():
+            if book.link:
+                line = f'## {book.title}'
+            else:
+                line = f'## {book.title}'
+
+            content_lines.append(line)
+            content_lines.append('')
+
+        content = '\n'.join(content_lines)
+        books_page = books_page.replace('[[content]]', content)
+
+        write_file(os.path.join(path, 'books.md'), books_page)
