@@ -36,5 +36,6 @@ class Page:
     def __str__(self) -> str:
         return self.link
 
-    def prepare(self, ref: Optional[RefDict] = None) -> str:
-        return prepare(self.content, ref)
+    def prepare(self, refs: RefDict) -> str:
+        found_refs = set()
+        return prepare(self.content, refs, found_refs)

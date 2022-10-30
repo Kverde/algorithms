@@ -4,7 +4,7 @@ from functools import partial
 
 # custom
 
-from site_builder.bibref import BibRef
+from site_builder.bibref import BibRef, RefDict, RefCollection
 
 
 class TemplateError(Exception):
@@ -51,12 +51,14 @@ def replace_links(text: str) -> str:
     return re.sub(r'\[\[(\d+)\]\]', r'\1.md', text)
 
 
-def replace_cite(match, refs: Dict[str, BibRef]):
+def replace_cite(match, refs: RefDict, found_refs: set):
     id_ref = match.group(1)
     locator: str = match.group(2).strip()
 
     if id_ref not in refs:
         raise ReferenceNotFound(f'Reference id "{id_ref}" not found')
+
+    found_refs.add(id_ref)
 
     ref = refs[id_ref]
     if ref.link:
@@ -70,17 +72,18 @@ def replace_cite(match, refs: Dict[str, BibRef]):
         return title
 
 
-def replace_ref(text: str, refs: Dict[str, BibRef]):
-    return re.sub(r"\[@(\w+) ?([^\]]*)]", partial(replace_cite, refs=refs), text)
+def replace_ref(text: str, refs: RefDict, found_refs: set):
+    return re.sub(r"\[@(\w+) ?([^\]]*)]", partial(replace_cite,
+                                                  refs=refs,
+                                                  found_refs=found_refs), text)
 
 
-def prepare(text: str, refs: Optional[Dict[str, BibRef]]) -> str:
+def prepare(text: str, refs: RefDict, found_refs: set) -> str:
     result = re.sub(r"{{([\w+]*)\|(.*?)}}", process_template,
                     text, flags=re.MULTILINE | re.DOTALL)
 
     result = replace_links(result)
 
-    if refs is not None:
-        result = replace_ref(result, refs)
+    result = replace_ref(result, refs, found_refs=found_refs)
 
     return result

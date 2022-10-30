@@ -27,6 +27,11 @@ BIBREF = {
         title='Алгоритмы и структуры данных.',
         type='book',
         link='algorithms.org'
+    ),
+    'BhargavaGrokaemAlgoritmy2018': BibRef(
+        id='McConnellCodeComplete2014',
+        title='Грокаем алгоритмы.',
+        type='book'
     )
 }
 
@@ -35,17 +40,28 @@ def fixture(name: str) -> str:
     return read_file(os.path.join('site_builder', 'tests', 'fixtures', name))
 
 
-def check(check_name: str, ref=None):
+def check(check_name: str, refs, found_refs):
     assert prepare(fixture(check_name + '.txt'),
-                   ref) == fixture(check_name + '_ok.txt')
+                   refs=refs,
+                   found_refs=found_refs
+                   ) == fixture(check_name + '_ok.txt')
 
 
 class TestPrepare():
     def test_tag(self):
-        check('templ_tag')
+        found_refs = set()
+        check('templ_tag', BIBREF, found_refs)
+        assert len(found_refs) == 0
 
     def test_link(self):
-        check('templ_link')
+        found_refs = set()
+        check('templ_link', BIBREF, found_refs)
+        assert len(found_refs) == 0
 
     def test_link(self):
-        check('templ_ref', BIBREF)
+        found_refs = set()
+        check('templ_ref', BIBREF, found_refs)
+        assert found_refs == set(
+            ['LiskovProgrammingWithAbstractDataTypes1974',
+             'McConnellCodeComplete2014',
+             'WirthAlgorithmsAndDataStructures2010'])
