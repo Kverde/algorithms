@@ -8,7 +8,7 @@ import frontmatter
 # custom
 from site_builder.template import prepare
 from site_builder.file import File
-from site_builder.bibref import Bibliography
+from site_builder.bibref import Bibliography, Refs
 
 
 class WrongPageFile(Exception):
@@ -18,6 +18,7 @@ class WrongPageFile(Exception):
 class Page:
     def __init__(self, file: File) -> None:
         self.file = file
+        self.id = self.file.filename
 
         self.link = '/'.join(self.file.rel_filename.split(os.sep))
 
@@ -36,6 +37,12 @@ class Page:
     def __str__(self) -> str:
         return self.link
 
-    def prepare(self, bibliography: Bibliography) -> str:
+    def prepare(self, bibliography: Bibliography, refs: Refs) -> str:
         found_refs = set()
-        return prepare(self.content, bibliography, found_refs)
+
+        prepared_content = prepare(self.content, bibliography, found_refs)
+
+        for ref in found_refs:
+            refs[ref].add(self.id)
+
+        return prepared_content
