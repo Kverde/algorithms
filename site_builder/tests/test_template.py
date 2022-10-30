@@ -40,9 +40,9 @@ def fixture(name: str) -> str:
     return read_file(os.path.join('site_builder', 'tests', 'fixtures', name))
 
 
-def check(check_name: str, refs, found_refs):
+def check(check_name: str, bibliography, found_refs):
     assert prepare(fixture(check_name + '.txt'),
-                   refs=refs,
+                   bibliography=bibliography,
                    found_refs=found_refs
                    ) == fixture(check_name + '_ok.txt')
 

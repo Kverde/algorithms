@@ -4,7 +4,7 @@ from functools import partial
 
 # custom
 
-from site_builder.bibref import BibItem, Bibliography, RefCollection
+from site_builder.bibref import BibItem, Bibliography, Refs
 
 
 class TemplateError(Exception):
@@ -51,16 +51,16 @@ def replace_links(text: str) -> str:
     return re.sub(r'\[\[(\d+)\]\]', r'\1.md', text)
 
 
-def replace_cite(match, refs: Bibliography, found_refs: set):
+def replace_cite(match, bibliography: Bibliography, found_refs: set):
     id_ref = match.group(1)
     locator: str = match.group(2).strip()
 
-    if id_ref not in refs:
+    if id_ref not in bibliography:
         raise ReferenceNotFound(f'Reference id "{id_ref}" not found')
 
     found_refs.add(id_ref)
 
-    ref = refs[id_ref]
+    ref = bibliography[id_ref]
     if ref.link:
         title = f'[{ref.title}]({ref.link})'
     else:
@@ -72,18 +72,18 @@ def replace_cite(match, refs: Bibliography, found_refs: set):
         return title
 
 
-def replace_ref(text: str, refs: Bibliography, found_refs: set):
+def replace_ref(text: str, bibliography: Bibliography, found_refs: set):
     return re.sub(r"\[@(\w+) ?([^\]]*)]", partial(replace_cite,
-                                                  refs=refs,
+                                                  bibliography=bibliography,
                                                   found_refs=found_refs), text)
 
 
-def prepare(text: str, refs: Bibliography, found_refs: set) -> str:
+def prepare(text: str, bibliography: Bibliography, found_refs: set) -> str:
     result = re.sub(r"{{([\w+]*)\|(.*?)}}", process_template,
                     text, flags=re.MULTILINE | re.DOTALL)
 
     result = replace_links(result)
 
-    result = replace_ref(result, refs, found_refs=found_refs)
+    result = replace_ref(result, bibliography, found_refs=found_refs)
 
     return result

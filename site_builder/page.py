@@ -36,6 +36,6 @@ class Page:
     def __str__(self) -> str:
         return self.link
 
-    def prepare(self, refs: Bibliography) -> str:
+    def prepare(self, bibliography: Bibliography) -> str:
         found_refs = set()
-        return prepare(self.content, refs, found_refs)
+        return prepare(self.content, bibliography, found_refs)

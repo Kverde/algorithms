@@ -15,7 +15,7 @@ class BibItem:
 
 
 Bibliography = Dict[str, BibItem]
-RefCollection = Dict[str, set]
+Refs = Dict[str, set]
 
 
 def load_refs_from_yaml(text: str) -> Bibliography:
