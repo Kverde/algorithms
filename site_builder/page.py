@@ -8,7 +8,7 @@ import frontmatter
 # custom
 from site_builder.template import prepare
 from site_builder.file import File
-from site_builder.bibref import RefDict
+from site_builder.bibref import Bibliography
 
 
 class WrongPageFile(Exception):
@@ -36,6 +36,6 @@ class Page:
     def __str__(self) -> str:
         return self.link
 
-    def prepare(self, refs: RefDict) -> str:
+    def prepare(self, refs: Bibliography) -> str:
         found_refs = set()
         return prepare(self.content, refs, found_refs)

@@ -4,7 +4,7 @@ from functools import partial
 
 # custom
 
-from site_builder.bibref import BibRef, RefDict, RefCollection
+from site_builder.bibref import BibItem, Bibliography, RefCollection
 
 
 class TemplateError(Exception):
@@ -51,7 +51,7 @@ def replace_links(text: str) -> str:
     return re.sub(r'\[\[(\d+)\]\]', r'\1.md', text)
 
 
-def replace_cite(match, refs: RefDict, found_refs: set):
+def replace_cite(match, refs: Bibliography, found_refs: set):
     id_ref = match.group(1)
     locator: str = match.group(2).strip()
 
@@ -72,13 +72,13 @@ def replace_cite(match, refs: RefDict, found_refs: set):
         return title
 
 
-def replace_ref(text: str, refs: RefDict, found_refs: set):
+def replace_ref(text: str, refs: Bibliography, found_refs: set):
     return re.sub(r"\[@(\w+) ?([^\]]*)]", partial(replace_cite,
                                                   refs=refs,
                                                   found_refs=found_refs), text)
 
 
-def prepare(text: str, refs: RefDict, found_refs: set) -> str:
+def prepare(text: str, refs: Bibliography, found_refs: set) -> str:
     result = re.sub(r"{{([\w+]*)\|(.*?)}}", process_template,
                     text, flags=re.MULTILINE | re.DOTALL)
 

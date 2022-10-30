@@ -2,7 +2,7 @@ import os
 
 # custom
 from site_builder.template import prepare
-from site_builder.bibref import BibRef
+from site_builder.bibref import BibItem
 
 
 def read_file(path: str):
@@ -11,24 +11,24 @@ def read_file(path: str):
 
 
 BIBREF = {
-    'LiskovProgrammingWithAbstractDataTypes1974': BibRef(
+    'LiskovProgrammingWithAbstractDataTypes1974': BibItem(
         id='LiskovProgrammingWithAbstractDataTypes1974',
         title='Programming with abstract data types. Barbara Liskov. 1974.',
         type='article',
         link='https://algorithms.way23.ru/20221017223629.html'
     ),
-    'McConnellCodeComplete2014': BibRef(
+    'McConnellCodeComplete2014': BibItem(
         id='McConnellCodeComplete2014',
         title='Совершенный код. Стив Макконнелл. Второе издание. Русская редакция. 2014.',
         type='book'
     ),
-    'WirthAlgorithmsAndDataStructures2010': BibRef(
+    'WirthAlgorithmsAndDataStructures2010': BibItem(
         id='McConnellCodeComplete2014',
         title='Алгоритмы и структуры данных.',
         type='book',
         link='algorithms.org'
     ),
-    'BhargavaGrokaemAlgoritmy2018': BibRef(
+    'BhargavaGrokaemAlgoritmy2018': BibItem(
         id='McConnellCodeComplete2014',
         title='Грокаем алгоритмы.',
         type='book'

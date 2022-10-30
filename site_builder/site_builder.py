@@ -10,7 +10,7 @@ from site_builder.utils import list_files, read_file, write_file, fixture
 from site_builder.template import prepare
 from site_builder.file import File
 from site_builder.page import Page
-from site_builder.bibref import BibRef, RefDict, load_refs_from_yaml
+from site_builder.bibref import BibItem, Bibliography, load_refs_from_yaml
 
 
 class WrongSettig(Exception):
@@ -23,7 +23,7 @@ class SiteBuilder:
         bib_path: str = os.path.join(site_path, 'data', '_bib.yml')
 
         self.load_settings(settings_path)
-        self.bib: RefDict = load_refs_from_yaml(read_file(bib_path))
+        self.bib: Bibliography = load_refs_from_yaml(read_file(bib_path))
 
         self.pages = []
 

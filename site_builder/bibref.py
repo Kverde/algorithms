@@ -6,24 +6,24 @@ from ruamel.yaml import YAML
 
 
 @dataclass
-class BibRef:
-    # Bibliographic reference
+class BibItem:
+    # Bibliographic item
     id: str
     title: str
     type: str
     link: Optional[str] = None
 
 
-RefDict = Dict[str, BibRef]
+Bibliography = Dict[str, BibItem]
 RefCollection = Dict[str, set]
 
 
-def load_refs_from_yaml(text: str) -> RefDict:
+def load_refs_from_yaml(text: str) -> Bibliography:
     yaml = YAML(typ="safe")
     bib_source = yaml.load(text)
     bib = {}
     for id, item in bib_source.items():
-        bib[id] = BibRef(
+        bib[id] = BibItem(
             id=id,
             title=item['title'],
             type=item['type'],
