@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from typing import Dict
+from typing import Dict, Optional
 
 # Bibliographic reference
 
@@ -9,6 +9,7 @@ class BibRef:
     id: str
     title: str
     type: str
+    link: Optional[str] = None
 
 
 RefDict = Dict[str, BibRef]

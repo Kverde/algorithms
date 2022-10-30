@@ -4,3 +4,4 @@ Links:
 
 * First link
 * [@McConnellCodeComplete2014 Chapter 1, page 45.]
+* [@WirthAlgorithmsAndDataStructures2010 page 22-33.]

@@ -12,14 +12,21 @@ def read_file(path: str):
 
 BIBREF = {
     'LiskovProgrammingWithAbstractDataTypes1974': BibRef(
-        'LiskovProgrammingWithAbstractDataTypes1974',
-        'Programming with abstract data types. Barbara Liskov. 1974.',
-        'article'
+        id='LiskovProgrammingWithAbstractDataTypes1974',
+        title='Programming with abstract data types. Barbara Liskov. 1974.',
+        type='article',
+        link='https://algorithms.way23.ru/20221017223629.html'
     ),
     'McConnellCodeComplete2014': BibRef(
-        'McConnellCodeComplete2014',
-        'Совершенный код. Стив Макконнелл. Второе издание. Русская редакция. 2014.',
-        'book'
+        id='McConnellCodeComplete2014',
+        title='Совершенный код. Стив Макконнелл. Второе издание. Русская редакция. 2014.',
+        type='book'
+    ),
+    'WirthAlgorithmsAndDataStructures2010': BibRef(
+        id='McConnellCodeComplete2014',
+        title='Алгоритмы и структуры данных.',
+        type='book',
+        link='algorithms.org'
     )
 }
 

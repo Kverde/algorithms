@@ -1,10 +1,8 @@
 from __future__ import annotations
 import os
 from collections import defaultdict
-import re
 
 # 3-rd party
-import frontmatter
 from ruamel.yaml import YAML
 
 # custom
@@ -46,7 +44,12 @@ class SiteBuilder:
         bib_source = yaml.load(read_file(bib_path))
         bib = {}
         for id, item in bib_source.items():
-            bib[id] = BibRef(id, item['title'], item['type'])
+            bib[id] = BibRef(
+                id=id,
+                title=item['title'],
+                type=item['type'],
+                link=item.get('link')
+            )
 
         self.bib = bib
 

@@ -51,30 +51,36 @@ def replace_links(text: str) -> str:
     return re.sub(r'\[\[(\d+)\]\]', r'\1.md', text)
 
 
-def replace_cite(match, ref: Dict[str, BibRef]):
+def replace_cite(match, refs: Dict[str, BibRef]):
     id_ref = match.group(1)
     locator: str = match.group(2).strip()
 
-    if id_ref not in ref:
+    if id_ref not in refs:
         raise ReferenceNotFound(f'Reference id "{id_ref}" not found')
 
-    if locator:
-        return f'{ref[id_ref].title} {locator.strip()}'
+    ref = refs[id_ref]
+    if ref.link:
+        title = f'[{ref.title}]({ref.link})'
     else:
-        return f'{ref[id_ref].title}'
+        title = ref.title
+
+    if locator:
+        return f'{title} {locator.strip()}'
+    else:
+        return title
 
 
-def replace_ref(text: str, ref: Dict[str, BibRef]):
-    return re.sub(r"\[@(\w+) ?([^\]]*)]", partial(replace_cite, ref=ref), text)
+def replace_ref(text: str, refs: Dict[str, BibRef]):
+    return re.sub(r"\[@(\w+) ?([^\]]*)]", partial(replace_cite, refs=refs), text)
 
 
-def prepare(text: str, ref: Optional[Dict[str, BibRef]]) -> str:
+def prepare(text: str, refs: Optional[Dict[str, BibRef]]) -> str:
     result = re.sub(r"{{([\w+]*)\|(.*?)}}", process_template,
                     text, flags=re.MULTILINE | re.DOTALL)
 
     result = replace_links(result)
 
-    if ref is not None:
-        result = replace_ref(result, ref)
+    if refs is not None:
+        result = replace_ref(result, refs)
 
     return result
