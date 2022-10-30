@@ -89,5 +89,8 @@ class SiteBuilder:
             content_lines.append('')
 
         content = '\n'.join(content_lines)
+        stats = f'Всего страниц: {len(self.pages)}'
+
         index_page = index_page.replace('[[content]]', content)
+        index_page = index_page.replace('[[stats]]', stats)
         write_file(os.path.join(path, 'readme.md'), index_page)
