@@ -3,7 +3,7 @@ import { defaultTheme } from "@vuepress/theme-default";
 import md_footnote from "markdown-it-footnote";
 import md_attrs from "markdown-it-attrs";
 import md_table from "markdown-it-multimd-table";
-import md_katex from "markdown-it-katex";
+import md_katex from "@iktakahiro/markdown-it-katex";
 
 export default {
   lang: "ru-RU",
@@ -33,7 +33,7 @@ export default {
       "link",
       {
         rel: "stylesheet",
-        href: "https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css",
+        href: "https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.css",
       },
     ],
 
@@ -75,7 +75,9 @@ export default {
 
   extendsMarkdown: (md) => {
     md.use(md_footnote);
-    md.use(md_katex);
+    md.use(md_katex, {
+      strict: false,
+    });
     md.use(md_attrs);
     md.use(md_table, {
       multiline: true,
