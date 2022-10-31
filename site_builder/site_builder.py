@@ -26,13 +26,13 @@ class SiteBuilder:
         self.bib: Bibliography = load_refs_from_yaml(read_file(bib_path))
         self.refs: Refs = defaultdict(set)
 
-        self.pages = []
+        self.pages = {}
 
         for filename in list_files(site_path, '.md'):
             file = File(filename, site_path, read_file(filename))
             page = Page(file)
             self.check_page(page)
-            self.pages.append(page)
+            self.pages[page.id] = page
 
     def load_settings(self, settings_path: str) -> None:
         yaml = YAML(typ="safe")
@@ -48,18 +48,22 @@ class SiteBuilder:
                 f"Page type '{page_type}' from file {page.rel_filename} not found in settings")
 
     def build(self, path: str) -> None:
-        for page in self.pages:
+        for page_id, page in self.pages.items():
             dest_filename = os.path.join(path, page.file.rel_filename)
             prepared_page = page.prepare(self.bib, self.refs)
             write_file(dest_filename, prepared_page)
 
         self.build_index(path)
 
+    def page_to_link(self, page_id: str):
+        page: Page = self.pages[page_id]
+        return f'[{page.title}]({page.link})'
+
     def build_index(self, path: str) -> None:
         index_page = read_file(fixture('readme.md'))
         links = defaultdict(list)
 
-        for page in self.pages:
+        for page_id, page in self.pages.items():
             title = page.title
             url = page.link
             page_type = page.metadata['page_type']
@@ -93,7 +97,8 @@ class SiteBuilder:
 
             content_lines.append(line)
             content_lines.append('')
-            refs = ', '.join(map(str, self.refs[book_id]))
+
+            refs = ', '.join(map(self.page_to_link, self.refs[book_id]))
             content_lines.append(refs)
             content_lines.append('')
 
