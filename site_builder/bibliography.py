@@ -37,22 +37,13 @@ class Bibliography:
 
         return bib
 
-    def md(self, refs: Refs, pages) -> str:
+    def md(self) -> str:
         content_lines = []
-        for book_id, book in self.items.items():
-            if book.link:
-                line = f'## {book.title}'
-            else:
-                line = f'## {book.title}'
+        for book in self.items.values():
+            book_filename = book.id + '.md'
+            line = f'* [{book.title}]({book_filename})'
 
             content_lines.append(line)
-            content_lines.append('')
-
-            temp = map(pages.get, refs[book_id])
-            line = ', '.join(map(lambda p: p.md_link(), temp))
-
-            content_lines.append(line)
-            content_lines.append('')
 
         content = '\n'.join(content_lines)
         return content
@@ -65,6 +56,8 @@ class Bibliography:
 
             lines = []
             lines.append(f'# {bib.title}')
+            lines.append(f'')
+            lines.append(f'[[toc]]')
             lines.append(f'')
 
             def make_toc_lines(obj, indend: str):
@@ -80,3 +73,6 @@ class Bibliography:
 
             dest_filename = os.path.join(dest_path, id + '.md')
             write_file(dest_filename, text)
+
+            # temp = map(pages.get, refs[book_id])
+            # line = ', '.join(map(lambda p: p.md_link(), temp))

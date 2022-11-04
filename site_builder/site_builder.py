@@ -85,7 +85,7 @@ class SiteBuilder:
         write_file(os.path.join(path, 'readme.md'), index_page)
 
         books_page = read_file(fixture('books.md'))
-        content = self.bib.md(self.refs, self.pages)
+        content = self.bib.md()
         books_page = books_page.replace('[[content]]', content)
 
         write_file(os.path.join(path, 'books.md'), books_page)
