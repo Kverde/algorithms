@@ -10,7 +10,7 @@ from site_builder.utils import list_files, read_file, write_file, fixture
 from site_builder.template import prepare
 from site_builder.file import File
 from site_builder.page import Page, Pages
-from site_builder.bibref import Refs
+from site_builder.bibref import References, ReferenceSet
 from site_builder.bibliography import Bibliography
 
 
@@ -25,7 +25,7 @@ class SiteBuilder:
 
         self.load_settings(settings_path)
         self.bib: Bibliography = Bibliography(bib_path)
-        self.refs: Refs = defaultdict(set)
+        self.refs: References = {}
 
         self.pages: Pages = {}
 
@@ -90,4 +90,4 @@ class SiteBuilder:
 
         write_file(os.path.join(path, 'books.md'), books_page)
 
-        self.bib.make_toc_pages(path)
+        self.bib.make_toc_pages(self.refs, self.pages, path)

@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from typing import Dict, Optional
+from typing import Dict, Optional, Set
 
 
 @dataclass
@@ -11,4 +11,12 @@ class BibItem:
     link: Optional[str] = None
 
 
-Refs = Dict[str, set]
+@dataclass(unsafe_hash=True)
+class Reference:
+    id: str
+    locator: str
+
+
+ReferenceSet = Set[Reference]
+
+References = Dict[str, Dict[str, str]]

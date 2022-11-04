@@ -2,6 +2,10 @@ import re
 from typing import List, Dict, Optional
 from functools import partial
 
+# custom
+
+from site_builder.bibref import ReferenceSet, Reference
+
 
 class TemplateError(Exception):
     pass
@@ -47,14 +51,14 @@ def replace_links(text: str) -> str:
     return re.sub(r'\[\[(\d+)\]\]', r'\1.md', text)
 
 
-def replace_cite(match, bibliography, found_refs: set):
+def replace_cite(match, bibliography, found_refs: ReferenceSet):
     id_ref = match.group(1)
     locator: str = match.group(2).strip()
 
     if id_ref not in bibliography.items:
         raise ReferenceNotFound(f'Reference id "{id_ref}" not found')
 
-    found_refs.add(id_ref)
+    found_refs.add(Reference(id_ref, locator))
 
     ref = bibliography.items[id_ref]
     if ref.link:
@@ -68,13 +72,13 @@ def replace_cite(match, bibliography, found_refs: set):
         return title
 
 
-def replace_ref(text: str, bibliography, found_refs: set):
+def replace_ref(text: str, bibliography, found_refs: ReferenceSet):
     return re.sub(r"\[@(\w+) ?([^\]]*)]", partial(replace_cite,
                                                   bibliography=bibliography,
                                                   found_refs=found_refs), text)
 
 
-def prepare(text: str, bibliography, found_refs: set) -> str:
+def prepare(text: str, bibliography, found_refs: ReferenceSet) -> str:
     result = re.sub(r"{{([\w+]*)\|(.*?)}}", process_template,
                     text, flags=re.MULTILINE | re.DOTALL)
 

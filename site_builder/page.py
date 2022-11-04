@@ -8,7 +8,7 @@ import frontmatter
 # custom
 from site_builder.template import prepare
 from site_builder.file import File
-from site_builder.bibref import Refs
+from site_builder.bibref import References, Reference
 from site_builder.bibliography import Bibliography
 
 
@@ -38,13 +38,19 @@ class Page:
     def __str__(self) -> str:
         return self.link
 
-    def prepare(self, bibliography: Bibliography, refs: Refs) -> str:
+    def prepare(self, bibliography: Bibliography, refs: References) -> str:
         found_refs = set()
 
         prepared_content = prepare(self.content, bibliography, found_refs)
 
-        for ref in found_refs:
-            refs[ref].add(self.id)
+        for reference in found_refs:
+            if reference.id not in refs:
+                refs[reference.id] = {}
+
+            if reference.locator not in refs[reference.id]:
+                refs[reference.id][reference.locator] = set()
+
+            refs[reference.id][reference.locator].add(self.id)
 
         return prepared_content
 
