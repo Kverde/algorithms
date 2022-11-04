@@ -4,7 +4,8 @@ from functools import partial
 
 # custom
 
-from site_builder.bibref import BibItem, Bibliography, Refs
+from site_builder.bibref import BibItem, Refs
+from site_builder.bibliography import Bibliography
 
 
 class TemplateError(Exception):
@@ -55,12 +56,12 @@ def replace_cite(match, bibliography: Bibliography, found_refs: set):
     id_ref = match.group(1)
     locator: str = match.group(2).strip()
 
-    if id_ref not in bibliography:
+    if id_ref not in bibliography.items:
         raise ReferenceNotFound(f'Reference id "{id_ref}" not found')
 
     found_refs.add(id_ref)
 
-    ref = bibliography[id_ref]
+    ref = bibliography.items[id_ref]
     if ref.link:
         title = f'[{ref.title}]({ref.link})'
     else:

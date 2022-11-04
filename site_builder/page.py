@@ -8,7 +8,8 @@ import frontmatter
 # custom
 from site_builder.template import prepare
 from site_builder.file import File
-from site_builder.bibref import Bibliography, Refs
+from site_builder.bibref import Refs
+from site_builder.bibliography import Bibliography
 
 
 class WrongPageFile(Exception):

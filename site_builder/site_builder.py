@@ -10,7 +10,8 @@ from site_builder.utils import list_files, read_file, write_file, fixture
 from site_builder.template import prepare
 from site_builder.file import File
 from site_builder.page import Page
-from site_builder.bibref import Refs, Bibliography, load_refs_from_yaml
+from site_builder.bibref import Refs
+from site_builder.bibliography import Bibliography
 
 
 class WrongSettig(Exception):
@@ -20,10 +21,10 @@ class WrongSettig(Exception):
 class SiteBuilder:
     def __init__(self, site_path: str) -> None:
         settings_path: str = os.path.join(site_path, 'data', 'settings.yml')
-        bib_path: str = os.path.join(site_path, 'data', '_bib.yml')
+        bib_path: str = os.path.join(site_path, 'data')
 
         self.load_settings(settings_path)
-        self.bib: Bibliography = load_refs_from_yaml(read_file(bib_path))
+        self.bib: Bibliography = Bibliography(bib_path)
         self.refs: Refs = defaultdict(set)
 
         self.pages = {}
@@ -89,7 +90,7 @@ class SiteBuilder:
 
         books_page = read_file(fixture('books.md'))
         content_lines = []
-        for book_id, book in self.bib.items():
+        for book_id, book in self.bib.items.items():
             if book.link:
                 line = f'## {book.title}'
             else:
