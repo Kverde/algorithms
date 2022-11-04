@@ -1,4 +1,4 @@
-from typing import Optional
+from typing import Optional, Dict
 import os
 import re
 
@@ -47,3 +47,9 @@ class Page:
             refs[ref].add(self.id)
 
         return prepared_content
+
+    def md_link(self):
+        return f'[{self.title}]({self.link})'
+
+
+Pages = Dict[str, Page]

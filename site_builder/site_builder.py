@@ -9,7 +9,7 @@ from ruamel.yaml import YAML
 from site_builder.utils import list_files, read_file, write_file, fixture
 from site_builder.template import prepare
 from site_builder.file import File
-from site_builder.page import Page
+from site_builder.page import Page, Pages
 from site_builder.bibref import Refs
 from site_builder.bibliography import Bibliography
 
@@ -27,7 +27,7 @@ class SiteBuilder:
         self.bib: Bibliography = Bibliography(bib_path)
         self.refs: Refs = defaultdict(set)
 
-        self.pages = {}
+        self.pages: Pages = {}
 
         for filename in list_files(site_path, '.md'):
             file = File(filename, site_path, read_file(filename))
@@ -55,10 +55,6 @@ class SiteBuilder:
             write_file(dest_filename, prepared_page)
 
         self.build_index(path)
-
-    def page_to_link(self, page_id: str):
-        page: Page = self.pages[page_id]
-        return f'[{page.title}]({page.link})'
 
     def build_index(self, path: str) -> None:
         index_page = read_file(fixture('readme.md'))
@@ -89,21 +85,7 @@ class SiteBuilder:
         write_file(os.path.join(path, 'readme.md'), index_page)
 
         books_page = read_file(fixture('books.md'))
-        content_lines = []
-        for book_id, book in self.bib.items.items():
-            if book.link:
-                line = f'## {book.title}'
-            else:
-                line = f'## {book.title}'
-
-            content_lines.append(line)
-            content_lines.append('')
-
-            refs = ', '.join(map(self.page_to_link, self.refs[book_id]))
-            content_lines.append(refs)
-            content_lines.append('')
-
-        content = '\n'.join(content_lines)
+        content = self.bib.md(self.refs, self.pages)
         books_page = books_page.replace('[[content]]', content)
 
         write_file(os.path.join(path, 'books.md'), books_page)

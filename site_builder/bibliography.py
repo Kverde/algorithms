@@ -7,7 +7,7 @@ from ruamel.yaml import YAML
 
 # custom
 from site_builder.toc import Toc
-from site_builder.bibref import BibItem
+from site_builder.bibref import BibItem, Refs
 from site_builder.utils import read_file
 
 BIB_FILENAME = '_bib.yml'
@@ -35,3 +35,23 @@ class Bibliography:
             )
 
         return bib
+
+    def md(self, refs: Refs, pages) -> str:
+        content_lines = []
+        for book_id, book in self.items.items():
+            if book.link:
+                line = f'## {book.title}'
+            else:
+                line = f'## {book.title}'
+
+            content_lines.append(line)
+            content_lines.append('')
+
+            temp = map(pages.get, refs[book_id])
+            line = ', '.join(map(lambda p: p.md_link(), temp))
+
+            content_lines.append(line)
+            content_lines.append('')
+
+        content = '\n'.join(content_lines)
+        return content
