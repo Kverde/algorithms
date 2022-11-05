@@ -8,6 +8,8 @@
 
 ## The Meaning of Abstraction
 
+[Абстракция (Abstraction)](20221029234239.md), [Абстрактный тип данных (Abstract data type)](20221023123217.md), [Абстракция и декомпозиция](20221029235132.md)
+
 ## The Programming Language
 
 ### Using Abstract Data Types
