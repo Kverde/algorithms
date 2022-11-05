@@ -85,6 +85,3 @@ class Bibliography:
 
             dest_filename = os.path.join(dest_path, id + '.md')
             write_file(dest_filename, text)
-
-            # temp = map(pages.get, refs[book_id])
-            # line = ', '.join(map(lambda p: p.md_link(), temp))
