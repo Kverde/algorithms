@@ -52,11 +52,20 @@ class Bibliography:
         content = '\n'.join(content_lines)
         return content
 
+    def check_refs(self, book_id, refs, toc):
+        for locator, page_id in refs.items():
+            if locator not in toc.items:
+                raise Exception(
+                    f'Wrong locator "{locator}" in page {page_id}')
+
     def make_toc_pages(self, refs, pages, dest_path):
+
         toc_folder = os.path.join(self.path, TOC_FOLDER)
         for id, bib in self.items.items():
             filename = os.path.join(toc_folder, id + '.toc')
             toc = Toc(read_file(filename))
+
+            self.check_refs(id, refs[id], toc)
 
             lines = []
             lines.append(f'# {bib.title}')
