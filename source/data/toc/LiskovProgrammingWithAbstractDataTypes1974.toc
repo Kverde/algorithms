@@ -1,1 +1,17 @@
-001 Глава I.
+001 Abstract
+002 Introduction
+003 The Meaning of Abstraction
+004 The Programming Language
+005   Using Abstract Data Types
+006   Defining Abstract Data Types
+007   Controlling the Use of Information
+008 Relationship to Previous Work
+009   Extensible Languages
+010   Standard Abstract Operations
+011   SIMULA Classes
+012 Implementation Considerations
+013   Modules and Module-Names
+014   Type Checking
+015   Retention
+016   Efficiency
+017 Conclusions
