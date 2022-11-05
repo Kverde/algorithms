@@ -2,7 +2,8 @@ import os
 
 # custom
 from site_builder.template import prepare
-from site_builder.bibref import BibItem
+from site_builder.bibref import BibItem, Reference
+from site_builder.bibliography import Bibliography
 
 
 def read_file(path: str):
@@ -10,30 +11,22 @@ def read_file(path: str):
         return file.read()
 
 
-BIBREF = {
-    'LiskovProgrammingWithAbstractDataTypes1974': BibItem(
-        id='LiskovProgrammingWithAbstractDataTypes1974',
-        title='Programming with abstract data types. Barbara Liskov. 1974.',
-        type='article',
-        link='https://algorithms.way23.ru/20221017223629.html'
-    ),
-    'McConnellCodeComplete2014': BibItem(
-        id='McConnellCodeComplete2014',
-        title='Совершенный код. Стив Макконнелл. Второе издание. Русская редакция. 2014.',
-        type='book'
-    ),
-    'WirthAlgorithmsAndDataStructures2010': BibItem(
-        id='McConnellCodeComplete2014',
-        title='Алгоритмы и структуры данных.',
-        type='book',
-        link='algorithms.org'
-    ),
-    'BhargavaGrokaemAlgoritmy2018': BibItem(
-        id='McConnellCodeComplete2014',
-        title='Грокаем алгоритмы.',
-        type='book'
-    )
-}
+BIB_TEXT = '''
+BhargavaGrokaemAlgoritmy2018:
+  title: Грокаем алгоритмы.
+  type: book
+LiskovProgrammingWithAbstractDataTypes1974:
+  title: Programming with abstract data types. Barbara Liskov. 1974.
+  type: article
+  link: https://algorithms.way23.ru/20221017223629.html
+McConnellCodeComplete2014:
+  title: Совершенный код. Стив Макконнелл. Второе издание. Русская редакция. 2014.
+  type: book
+WirthAlgorithmsAndDataStructures2010:
+  title: Алгоритмы и структуры данных.
+  type: book
+  link: algorithms.org
+'''
 
 
 def fixture(name: str) -> str:
@@ -50,18 +43,18 @@ def check(check_name: str, bibliography, found_refs):
 class TestPrepare():
     def test_tag(self):
         found_refs = set()
-        check('templ_tag', BIBREF, found_refs)
+        check('templ_tag', Bibliography('', text=BIB_TEXT), found_refs)
         assert len(found_refs) == 0
 
     def test_link(self):
         found_refs = set()
-        check('templ_link', BIBREF, found_refs)
+        check('templ_link', Bibliography('', text=BIB_TEXT), found_refs)
         assert len(found_refs) == 0
 
-    def test_link(self):
+    def test_link2(self):
         found_refs = set()
-        check('templ_ref', BIBREF, found_refs)
+        check('templ_ref', Bibliography('', text=BIB_TEXT), found_refs)
         assert found_refs == set(
-            ['LiskovProgrammingWithAbstractDataTypes1974',
-             'McConnellCodeComplete2014',
-             'WirthAlgorithmsAndDataStructures2010'])
+            [Reference('LiskovProgrammingWithAbstractDataTypes1974', ''),
+             Reference('McConnellCodeComplete2014', 'Chapter 1, page 45.'),
+             Reference('WirthAlgorithmsAndDataStructures2010', 'page 22-33.')])

@@ -18,10 +18,14 @@ BibliographyItems = Dict[str, BibItem]
 
 
 class Bibliography:
-    def __init__(self, path: str) -> None:
+    def __init__(self, path: str, text: str = None) -> None:
         self.path = path
         bib_filename = os.path.join(path, BIB_FILENAME)
-        self.items: BibliographyItems = self.load_bib(read_file(bib_filename))
+        if text:
+            self.items: BibliographyItems = self.load_bib(text)
+        else:
+            self.items: BibliographyItems = self.load_bib(
+                read_file(bib_filename))
 
     def load_bib(self, text: str) -> BibliographyItems:
         yaml = YAML(typ="safe")
