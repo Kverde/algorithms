@@ -46,7 +46,7 @@ class SiteBuilder:
 
         if page_type not in self.page_type_title:
             raise WrongSettig(
-                f"Page type '{page_type}' from file {page.rel_filename} not found in settings")
+                f"Page type '{page_type}' from file {page.id} not found in settings")
 
     def build(self, path: str) -> None:
         for page_id, page in self.pages.items():
