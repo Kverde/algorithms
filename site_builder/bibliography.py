@@ -85,7 +85,7 @@ class Bibliography:
                         p = pages[book_id]
                         toc_pages.append(p.md_link())
                 if toc_pages:
-                    lines.append(', '.join(toc_pages))
+                    lines.append(', '.join(sorted(toc_pages)))
                     lines.append('')
 
                 for item in obj.children:
