@@ -24,6 +24,7 @@ class WrongLink(Exception):
 
 class SiteBuilder:
     def __init__(self, site_path: str) -> None:
+        self.site_path = site_path
         settings_path: str = os.path.join(site_path, 'data', 'settings.yml')
         bib_path: str = os.path.join(site_path, 'data')
 
@@ -54,6 +55,14 @@ class SiteBuilder:
 
     def build(self, path: str) -> None:
         for page_id, page in self.pages.items():
+
+            images = page.get_image_links()
+            for image in images:
+                filename = os.path.join(self.site_path, image)
+                if not os.path.exists(filename):
+                    raise WrongLink(
+                        f'Page {page.id} has wrong image link {image}')
+
             dest_filename = os.path.join(path, page.file.rel_filename)
             prepared_page, links = page.prepare(self.bib, self.refs)
 

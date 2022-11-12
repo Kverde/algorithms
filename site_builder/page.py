@@ -38,6 +38,9 @@ class Page:
     def __str__(self) -> str:
         return self.link
 
+    def get_image_links(self):
+        return re.findall(r'!\[\]\(([^)]*)\)', self.content)
+
     def prepare(self, bibliography: Bibliography, refs: References) -> str:
         found_refs = set()
 
