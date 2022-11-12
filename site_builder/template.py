@@ -48,7 +48,14 @@ def process_template(match):
 
 
 def replace_links(text: str) -> str:
-    return re.sub(r'\[\[(\d+)\]\]', r'\1.md', text)
+    links = set()
+
+    def replace(match):
+        file_id = match.group(1) + '.md'
+        links.add(file_id)
+        return file_id
+
+    return re.sub(r'\[\[(\d+)\]\]', replace, text), links
 
 
 def replace_cite(match, bibliography, found_refs: ReferenceSet):
@@ -82,8 +89,8 @@ def prepare(text: str, bibliography, found_refs: ReferenceSet) -> str:
     result = re.sub(r"{{([\w+]*)\|(.*?)}}", process_template,
                     text, flags=re.MULTILINE | re.DOTALL)
 
-    result = replace_links(result)
+    result, links = replace_links(result)
 
     result = replace_ref(result, bibliography, found_refs=found_refs)
 
-    return result
+    return result, links

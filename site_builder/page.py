@@ -41,7 +41,8 @@ class Page:
     def prepare(self, bibliography: Bibliography, refs: References) -> str:
         found_refs = set()
 
-        prepared_content = prepare(self.content, bibliography, found_refs)
+        prepared_content, links = prepare(
+            self.content, bibliography, found_refs)
 
         for reference in found_refs:
             if reference.id not in refs:
@@ -52,7 +53,7 @@ class Page:
 
             refs[reference.id][reference.locator].add(self.id)
 
-        return prepared_content
+        return prepared_content, links
 
     def md_link(self):
         return f'[{self.title}]({self.link})'

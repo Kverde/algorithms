@@ -18,6 +18,10 @@ class WrongSettig(Exception):
     pass
 
 
+class WrongLink(Exception):
+    pass
+
+
 class SiteBuilder:
     def __init__(self, site_path: str) -> None:
         settings_path: str = os.path.join(site_path, 'data', 'settings.yml')
@@ -51,7 +55,15 @@ class SiteBuilder:
     def build(self, path: str) -> None:
         for page_id, page in self.pages.items():
             dest_filename = os.path.join(path, page.file.rel_filename)
-            prepared_page = page.prepare(self.bib, self.refs)
+            prepared_page, links = page.prepare(self.bib, self.refs)
+
+            if page_id in links:
+                raise WrongLink(f'Page {page.id} links to self')
+
+            for link_id in links:
+                if link_id not in self.pages:
+                    raise WrongLink(f'Page {page.id} has wrong link {link_id}')
+
             write_file(dest_filename, prepared_page)
 
         self.build_index(path)
