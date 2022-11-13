@@ -16,6 +16,15 @@ class WrongPageFile(Exception):
     pass
 
 
+GITHUB_LINK = '''
+<p v-pre style="text-align: right">
+  <a href="https://github.com/Kverde/algorithms/blob/main/source/{0}">
+  Эта заметка на GitHub
+  </a>
+</p>
+'''
+
+
 class Page:
     def __init__(self, file: File) -> None:
         self.file = file
@@ -55,6 +64,9 @@ class Page:
                 refs[reference.id][reference.locator] = set()
 
             refs[reference.id][reference.locator].add(self.id)
+
+        prepared_content += '\n\n'
+        prepared_content += GITHUB_LINK.format(self.id)
 
         return prepared_content, links
 
