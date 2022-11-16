@@ -1,4 +1,6 @@
-# Programming with abstract data types. Barbara Liskov. 1974.
+# Programming with abstract data types
+
+[Programming with abstract data types. Barbara Liskov. 1974](https://algorithms.way23.ru/20221017223629.html)
 
 [[toc]]
 

@@ -63,20 +63,13 @@ def replace_cite(match, bibliography, found_refs: ReferenceSet):
     locator: str = match.group(2).strip()
 
     if id_ref not in bibliography.items:
+        print(bibliography.items)
         raise ReferenceNotFound(f'Reference id "{id_ref}" not found')
 
     found_refs.add(Reference(id_ref, locator))
 
     ref = bibliography.items[id_ref]
-    if ref.link:
-        title = f'[{ref.title}]({ref.link})'
-    else:
-        title = ref.title
-
-    if locator:
-        return f'{title} {locator.strip()}'
-    else:
-        return title
+    return ref.get_info(locator)
 
 
 def replace_ref(text: str, bibliography, found_refs: ReferenceSet):

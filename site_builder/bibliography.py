@@ -4,13 +4,14 @@ from typing import Dict, Optional
 
 # 3-rd party
 from ruamel.yaml import YAML
+import bibtexparser
 
 # custom
 from site_builder.toc import Toc
 from site_builder.bibref import BibItem, References
 from site_builder.utils import read_file, write_file
 
-BIB_FILENAME = '_bib.yml'
+BIB_FILENAME = 'bibtex.bib'
 TOC_FOLDER = 'toc'
 
 
@@ -28,15 +29,18 @@ class Bibliography:
                 read_file(bib_filename))
 
     def load_bib(self, text: str) -> BibliographyItems:
-        yaml = YAML(typ="safe")
-        bib_source = yaml.load(text)
+        db = bibtexparser.loads(text)
+
         bib = {}
-        for id, item in bib_source.items():
-            bib[id] = BibItem(
-                id=id,
-                title=item['title'],
-                type=item['type'],
-                link=item.get('link')
+        for book in db.entries:
+            bib[book['ID']] = BibItem(
+                id=book['ID'],
+                title=book['title'],
+                author=book['author'],
+                type=book['ENTRYTYPE'],
+                publisher=book.get('publisher'),
+                year=book.get('year'),
+                link=book.get('link'),
             )
 
         return bib
@@ -45,7 +49,7 @@ class Bibliography:
         content_lines = []
         for book in self.items.values():
             book_filename = book.id + '.md'
-            line = f'* [{book.title}]({book_filename})'
+            line = f'* [{book.title}. {book.author}]({book_filename})'
 
             content_lines.append(line)
 
@@ -69,6 +73,8 @@ class Bibliography:
 
             lines = []
             lines.append(f'# {bib.title}')
+            lines.append(f'')
+            lines.append(f'{bib.get_info(None)}')
             lines.append(f'')
             lines.append(f'[[toc]]')
             lines.append(f'')
