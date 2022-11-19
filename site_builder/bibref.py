@@ -35,7 +35,7 @@ class BibItem:
             if locator not in toc.items:
                 raise WrongLocator(f'Wrong locator {locator}')
 
-            info = [info, toc.items[locator].title]
+            info = [info, toc.items[locator].get_full_title()]
             info = filter(bool, info)
             info = '. '.join(info)
 

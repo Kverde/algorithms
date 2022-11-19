@@ -58,7 +58,7 @@ class Toc():
             new_level = count_first_space(title) // 2
 
             if new_level == level:
-                parent = None if level == 0 else stack[-1]
+                parent = None if len(stack) == 1 else stack[-1]
                 new_toc_item.parent = parent
                 stack[-1].children.append(new_toc_item)
                 last = new_toc_item
@@ -66,14 +66,14 @@ class Toc():
                 d = level - new_level
                 for _ in range(d):
                     stack.pop()
-                parent = None if level == 0 else stack[-1]
+                parent = None if len(stack) == 1 else stack[-1]
                 new_toc_item.parent = parent
                 stack[-1].children.append(new_toc_item)
                 last = new_toc_item
                 level = new_level
             else:
                 stack.append(last)
-                parent = None if level == 0 else stack[-1]
+                parent = None if len(stack) == 1 else stack[-1]
                 new_toc_item.parent = parent
                 stack[-1].children.append(new_toc_item)
                 last = new_toc_item
