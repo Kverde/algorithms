@@ -27,6 +27,16 @@ class Bibliography:
         else:
             self.items: BibliographyItems = self.load_bib(
                 read_file(bib_filename))
+        self.toc = self.load_toc()
+
+    def load_toc(self):
+        toc_folder = os.path.join(self.path, TOC_FOLDER)
+        res = {}
+        for id, bib in self.items.items():
+            filename = os.path.join(toc_folder, id + '.toc')
+            toc = Toc(read_file(filename))
+            res[id] = toc
+        return res
 
     def load_bib(self, text: str) -> BibliographyItems:
         db = bibtexparser.loads(text)
@@ -35,6 +45,7 @@ class Bibliography:
         for book in db.entries:
             bib[book['ID']] = BibItem(
                 id=book['ID'],
+                bibliography=self,
                 title=book['title'],
                 author=book['author'],
                 type=book['ENTRYTYPE'],
@@ -63,18 +74,15 @@ class Bibliography:
                     f'Wrong locator "{locator}" in page {page_id}')
 
     def make_toc_pages(self, refs, pages, dest_path):
-
-        toc_folder = os.path.join(self.path, TOC_FOLDER)
         for id, bib in self.items.items():
-            filename = os.path.join(toc_folder, id + '.toc')
-            toc = Toc(read_file(filename))
+            toc = self.toc[id]
 
             self.check_refs(id, refs[id], toc)
 
             lines = []
             lines.append(f'# {bib.title}')
             lines.append(f'')
-            lines.append(f'{bib.get_info(None)}')
+            lines.append(f'{bib.get_toc_info()}')
             lines.append(f'')
             lines.append(f'[[toc]]')
             lines.append(f'')

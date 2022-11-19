@@ -1,11 +1,21 @@
 from dataclasses import dataclass
-from typing import Dict, Optional, Set
+from typing import Dict, Optional, Set, TYPE_CHECKING
+
+# custom
+
+if TYPE_CHECKING:
+    from site_builder.bibliography import Bibliography
+
+
+class WrongLocator(Exception):
+    pass
 
 
 @dataclass
 class BibItem:
     # Bibliographic item
     id: str
+    bibliography: "Bibliography"
     title: str
     type: str
     author: str
@@ -18,12 +28,26 @@ class BibItem:
         info = filter(bool, info)
         info = '. '.join(info)
 
-        if self.link:
-            info = f'[{info}]({self.link})'
+        info = f'[{info}]({self.id}.md)'
 
-        info = [info, locator]
+        if locator:
+            toc = self.bibliography.toc[self.id]
+            if locator not in toc.items:
+                raise WrongLocator(f'Wrong locator {locator}')
+
+            info = [info, toc.items[locator].title]
+            info = filter(bool, info)
+            info = '. '.join(info)
+
+        return info
+
+    def get_toc_info(self):
+        info = [self.title, self.author, self.publisher, self.year]
         info = filter(bool, info)
         info = '. '.join(info)
+
+        if self.link:
+            info = f'[{info}]({self.link})'
 
         return info
 

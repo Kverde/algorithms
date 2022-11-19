@@ -4,13 +4,22 @@ from typing import List, Dict
 
 class TocItem():
 
-    def __init__(self, id: str, title: str) -> None:
+    def __init__(self, id: str, title: str, parent: TocItem) -> None:
         self.id = id
         self.title = title
         self.children: List[TocItem] = []
+        self.parent = parent
 
     def __repr__(self) -> str:
         return f'{self.id}'
+
+    def get_full_title(self) -> str:
+        parent = self.parent
+        title = self.title
+        while parent:
+            title = f'{parent.title}. {title}'
+            parent = parent.parent
+        return title
 
 
 def count_first_space(text: str):
@@ -43,23 +52,29 @@ class Toc():
             if len(title.strip()) == 0:
                 continue
 
-            new_toc_item = TocItem(id, title.lstrip())
+            new_toc_item = TocItem(id, title.lstrip(), None)
 
             self.items[id] = new_toc_item
             new_level = count_first_space(title) // 2
 
             if new_level == level:
+                parent = None if level == 0 else stack[-1]
+                new_toc_item.parent = parent
                 stack[-1].children.append(new_toc_item)
                 last = new_toc_item
             elif new_level < level:
                 d = level - new_level
                 for _ in range(d):
                     stack.pop()
+                parent = None if level == 0 else stack[-1]
+                new_toc_item.parent = parent
                 stack[-1].children.append(new_toc_item)
                 last = new_toc_item
                 level = new_level
             else:
                 stack.append(last)
+                parent = None if level == 0 else stack[-1]
+                new_toc_item.parent = parent
                 stack[-1].children.append(new_toc_item)
                 last = new_toc_item
                 level = new_level
