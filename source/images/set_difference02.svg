@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="49.545506mm"
+   height="56.385319mm"
+   viewBox="0 0 49.545506 56.385319"
+   version="1.1"
+   id="svg25536"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   sodipodi:docname="set_difference02.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview25538"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="2.3786088"
+     inkscape:cx="136.00387"
+     inkscape:cy="81.770487"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs25533" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-75.59059,-87.627904)">
+    <text
+       xml:space="preserve"
+       style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.264583"
+       x="100.99941"
+       y="135.42885"
+       id="text538"><tspan
+         sodipodi:role="line"
+         id="tspan536"
+         style="stroke-width:0.264583"
+         x="100.99941"
+         y="135.42885" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';white-space:pre;inline-size:3.5141;stroke-width:0.264583"
+       x="102.31757"
+       y="158.06273"
+       id="text6168"
+       transform="translate(-2.6660843,-66.851928)"><tspan
+         x="102.31757"
+         y="158.06273"
+         id="tspan27082">I</tspan></text>
+    <g
+       id="g27065">
+      <rect
+         style="fill:#cccccc;stroke:#000000;stroke-width:0.465"
+         id="rect26920"
+         width="49.080505"
+         height="49.080505"
+         x="75.82309"
+         y="94.700218" />
+      <circle
+         style="fill:#f9f9f9;stroke:#000000;stroke-width:0.465"
+         id="path26974"
+         cx="101.38586"
+         cy="119.0045"
+         r="14.865731" />
+      <text
+         xml:space="preserve"
+         style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.264583"
+         x="98.399216"
+         y="117.24822"
+         id="text534"><tspan
+           sodipodi:role="line"
+           id="tspan532"
+           style="stroke-width:0.264583"
+           x="98.399216"
+           y="117.24822">B</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.264583"
+         x="114.4603"
+         y="138.82063"
+         id="text27057"><tspan
+           sodipodi:role="line"
+           id="tspan27055"
+           style="stroke-width:0.264583"
+           x="114.4603"
+           y="138.82063">B′</tspan></text>
+    </g>
+  </g>
+</svg>
