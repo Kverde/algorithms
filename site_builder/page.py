@@ -29,6 +29,7 @@ class Page:
     def __init__(self, file: File) -> None:
         self.file = file
         self.id = self.file.filename
+        self.link_to_this = set()
 
         self.link = '/'.join(self.file.rel_filename.split(os.sep))
 
@@ -50,6 +51,14 @@ class Page:
     def get_image_links(self):
         return re.findall(r'!\[\]\(([^)]*)\)', self.content)
 
+    def prepare_links(self, bibliography: Bibliography, refs: References):
+        found_refs = set()
+
+        prepared_content, links = prepare(
+            self.content, bibliography, found_refs)
+
+        return links
+
     def prepare(self, bibliography: Bibliography, refs: References) -> str:
         found_refs = set()
 
@@ -64,6 +73,14 @@ class Page:
                 refs[reference.id][reference.locator] = set()
 
             refs[reference.id][reference.locator].add(self.id)
+
+        links = []
+        for page in sorted(self.link_to_this, key=lambda p: p.title):
+            links.append('* ' + page.md_link())
+
+        prepared_content += '\n\n'
+        prepared_content += '## Ссылки на эту заметку\n\n'
+        prepared_content += '\n'.join(links)
 
         prepared_content += '\n\n'
         prepared_content += GITHUB_LINK.format(self.id)
