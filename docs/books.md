@@ -8,3 +8,4 @@
 * [Лекции по математическому анализу. Часть 1. Введение в математический анализ. А. Ю. Петрович](PetrovichLekciiPoMatematicheskomu2017.md)
 * [Рассказы о множествах. 3-е издание. Н. Я. Виленкин](VilenkinRasskazyMnozhestvah2005.md)
 * [Programming with abstract data types. Barbara Liskov](LiskovProgrammingWithAbstractDataTypes1974.md)
+* [Математическая логика. Ершов Ю. Л., Палютин Е. А.](ErshovMathLogic2011.md)
