@@ -1,6 +1,7 @@
 from typing import Optional, Dict
 import os
 import re
+import urllib.parse
 
 # 3-rd party
 import frontmatter
@@ -18,8 +19,16 @@ class WrongPageFile(Exception):
 
 GITHUB_LINK = '''
 <p v-pre style="text-align: right">
-  <a href="https://github.com/Kverde/algorithms/blob/main/source/{0}">
+  <a href="https://github.com/Kverde/algorithms/blob/main/source/{0}" target="_blank">
   Эта заметка на GitHub
+  </a>
+</p>
+'''
+
+DISCOURSE_LINK = '''
+<p v-pre style="text-align: right">
+  <a href="https://discourse.comtext.space/new-topic?title=[title]&body=[body]&category=[category]" target="_blank">
+  Обсудить на форуме
   </a>
 </p>
 '''
@@ -84,6 +93,15 @@ class Page:
 
         prepared_content += '\n\n'
         prepared_content += GITHUB_LINK.format(self.id)
+
+        discourse_link = DISCOURSE_LINK
+        discourse_link = discourse_link.replace('[body]', '')
+        discourse_link = discourse_link.replace('[category]', 'algorithm')
+        discourse_link = discourse_link.replace(
+            '[title]', urllib.parse.quote(self.title))
+
+        prepared_content += '\n\n'
+        prepared_content += discourse_link
 
         return prepared_content, links
 
