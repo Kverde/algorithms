@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+host: https://algorithms.way23.ru/

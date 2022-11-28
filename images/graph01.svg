@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="64.492989mm"
+   height="55.078678mm"
+   viewBox="0 0 64.492989 55.078678"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   sodipodi:docname="graph01.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="2.3786088"
+     inkscape:cx="191.91891"
+     inkscape:cy="115.82401"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <rect
+       x="231.2276"
+       y="115.19339"
+       width="293.02843"
+       height="119.81794"
+       id="rect1394" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-28.393902,-50.754182)">
+    <circle
+       style="fill:none;stroke:#000000;stroke-width:0.4;stroke-dasharray:none"
+       id="path236"
+       cx="37.898731"
+       cy="62.43898"
+       r="3.9645398" />
+    <text
+       xml:space="preserve"
+       style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.264583"
+       x="36.266983"
+       y="64.22216"
+       id="text1006"><tspan
+         sodipodi:role="line"
+         id="tspan1004"
+         style="stroke-width:0.264583"
+         x="36.266983"
+         y="64.22216">A</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.264583"
+       x="27.919857"
+       y="54.393661"
+       id="text1010"><tspan
+         sodipodi:role="line"
+         id="tspan1008"
+         style="stroke-width:0.264583"
+         x="27.919857"
+         y="54.393661">Вершина</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.4;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       d="M 71.968714,63.848596 92.835123,58.257458"
+       id="path1066" />
+    <text
+       xml:space="preserve"
+       style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.264583"
+       x="74.860809"
+       y="54.616131"
+       id="text1070"><tspan
+         sodipodi:role="line"
+         id="tspan1068"
+         style="stroke-width:0.264583"
+         x="74.860809"
+         y="54.616131">Ребро</tspan></text>
+    <circle
+       style="fill:none;stroke:#000000;stroke-width:0.4;stroke-dasharray:none"
+       id="path236-2"
+       cx="39.043304"
+       cy="99.888573"
+       r="3.9645398" />
+    <text
+       xml:space="preserve"
+       style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.264583"
+       x="37.411556"
+       y="101.67175"
+       id="text1006-5"><tspan
+         sodipodi:role="line"
+         id="tspan1004-5"
+         style="stroke-width:0.264583"
+         x="37.411556"
+         y="101.67175">A</tspan></text>
+    <circle
+       style="fill:none;stroke:#000000;stroke-width:0.4;stroke-dasharray:none"
+       id="path236-5"
+       cx="57.619465"
+       cy="86.874138"
+       r="3.9645398" />
+    <text
+       xml:space="preserve"
+       style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.264583"
+       x="55.969955"
+       y="88.657318"
+       id="text1006-7"><tspan
+         sodipodi:role="line"
+         id="tspan1004-2"
+         style="stroke-width:0.264583"
+         x="55.969955"
+         y="88.657318">B</tspan></text>
+    <circle
+       style="fill:none;stroke:#000000;stroke-width:0.4;stroke-dasharray:none"
+       id="path236-8"
+       cx="80.200066"
+       cy="101.66832"
+       r="3.9645398" />
+    <text
+       xml:space="preserve"
+       style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.264583"
+       x="78.638748"
+       y="103.4515"
+       id="text1006-74"><tspan
+         sodipodi:role="line"
+         id="tspan1004-3"
+         style="stroke-width:0.264583"
+         x="78.638748"
+         y="103.4515">C</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.375613;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       d="M 42.34066,97.530197 54.655814,89.621832"
+       id="path1066-2"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.375613;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       d="M 61.028054,88.881716 77.180798,99.048954"
+       id="path1066-2-8"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.264583"
+       x="63.848598"
+       y="79.198952"
+       id="text1365"><tspan
+         sodipodi:role="line"
+         id="tspan1363"
+         style="stroke-width:0.264583"
+         x="63.848598"
+         y="79.198952">Граф</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,28.393902,50.754182)"
+       id="text1392"
+       style="line-height:1.25;font-family:Calibri;font-size:21.3333168px;-inkscape-font-specification:'Calibri, Normal';white-space:pre;shape-inside:url(#rect1394)" />
+  </g>
+</svg>

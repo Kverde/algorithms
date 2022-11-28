@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="89.029884mm"
+   height="101.7636mm"
+   viewBox="0 0 89.029884 101.7636"
+   version="1.1"
+   id="svg274"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   sodipodi:docname="selection_sort01.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview276"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.1893044"
+     inkscape:cx="-18.918622"
+     inkscape:cy="139.9978"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs271" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-24.340524,-66.061801)">
+    <g
+       id="g1514"
+       transform="translate(-10.931121)">
+      <text
+         xml:space="preserve"
+         style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.264583"
+         x="54.900951"
+         y="71.012863"
+         id="text1463"><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.264583"
+           x="54.900951"
+           y="71.012863"
+           id="tspan1465">Отсортированная часть</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.264583"
+         x="54.699757"
+         y="82.854729"
+         id="text1471"><tspan
+           sodipodi:role="line"
+           id="tspan1469"
+           style="stroke-width:0.264583"
+           x="54.699757"
+           y="82.854729">Неотсортированная часть</tspan></text>
+      <rect
+         style="fill:#008000;stroke:#000000;stroke-width:0.365;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1223-4"
+         width="6.9216099"
+         height="6.9216099"
+         x="43.653339"
+         y="66.244301" />
+      <rect
+         style="fill:#c83737;stroke:#000000;stroke-width:0.365;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1223-3"
+         width="6.9216099"
+         height="6.9216099"
+         x="43.653339"
+         y="78.10408" />
+    </g>
+    <g
+       id="g1924"
+       transform="translate(2.7319272)">
+      <g
+         id="g1820">
+        <g
+           id="g1777">
+          <rect
+             style="fill:#c83737;stroke:#000000;stroke-width:0.365;stroke-dasharray:none;stroke-opacity:1"
+             id="rect1223"
+             width="6.9216099"
+             height="6.9216099"
+             x="68.926323"
+             y="98.819313" />
+          <rect
+             style="fill:#c83737;stroke:#000000;stroke-width:0.365;stroke-dasharray:none;stroke-opacity:1"
+             id="rect1223-1"
+             width="6.9216099"
+             height="6.9216099"
+             x="75.847931"
+             y="98.819313" />
+          <rect
+             style="fill:#c83737;stroke:#000000;stroke-width:0.365;stroke-dasharray:none;stroke-opacity:1"
+             id="rect1223-1-0"
+             width="6.9216099"
+             height="6.9216099"
+             x="82.769539"
+             y="98.819313" />
+          <rect
+             style="fill:#c83737;stroke:#000000;stroke-width:0.365;stroke-dasharray:none;stroke-opacity:1"
+             id="rect1223-1-3"
+             width="6.9216099"
+             height="6.9216099"
+             x="89.691154"
+             y="98.819313" />
+          <rect
+             style="fill:#c83737;stroke:#000000;stroke-width:0.365;stroke-dasharray:none;stroke-opacity:1"
+             id="rect1223-1-6"
+             width="6.9216099"
+             height="6.9216099"
+             x="96.612762"
+             y="98.819313" />
+          <rect
+             style="fill:#c83737;stroke:#000000;stroke-width:0.365;stroke-dasharray:none;stroke-opacity:1"
+             id="rect1223-1-66"
+             width="6.9216099"
+             height="6.9216099"
+             x="103.53437"
+             y="98.819313" />
+        </g>
+        <text
+           xml:space="preserve"
+           style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.264583"
+           x="30.509796"
+           y="103.59063"
+           id="text1518"><tspan
+             sodipodi:role="line"
+             id="tspan1516"
+             style="stroke-width:0.264583"
+             x="30.509796"
+             y="103.59063">До начала</tspan></text>
+      </g>
+      <g
+         id="g1831">
+        <text
+           xml:space="preserve"
+           style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.264583"
+           x="21.134552"
+           y="115.97673"
+           id="text1522"><tspan
+             sodipodi:role="line"
+             id="tspan1520"
+             style="stroke-width:0.264583"
+             x="21.134552"
+             y="115.97673">После 1 итерации</tspan></text>
+        <g
+           id="g1785"
+           transform="translate(-0.6312561)">
+          <rect
+             style="fill:#008000;stroke:#000000;stroke-width:0.365;stroke-dasharray:none;stroke-opacity:1"
+             id="rect1223-42"
+             width="6.9216099"
+             height="6.9216099"
+             x="69.557579"
+             y="111.22195" />
+          <rect
+             style="fill:#c83737;stroke:#000000;stroke-width:0.365;stroke-dasharray:none;stroke-opacity:1"
+             id="rect1223-1-30"
+             width="6.9216099"
+             height="6.9216099"
+             x="76.479187"
+             y="111.22195" />
+          <rect
+             style="fill:#c83737;stroke:#000000;stroke-width:0.365;stroke-dasharray:none;stroke-opacity:1"
+             id="rect1223-1-0-5"
+             width="6.9216099"
+             height="6.9216099"
+             x="83.400795"
+             y="111.22195" />
+          <rect
+             style="fill:#c83737;stroke:#000000;stroke-width:0.365;stroke-dasharray:none;stroke-opacity:1"
+             id="rect1223-1-3-7"
+             width="6.9216099"
+             height="6.9216099"
+             x="90.322411"
+             y="111.22195" />
+          <rect
+             style="fill:#c83737;stroke:#000000;stroke-width:0.365;stroke-dasharray:none;stroke-opacity:1"
+             id="rect1223-1-6-7"
+             width="6.9216099"
+             height="6.9216099"
+             x="97.244019"
+             y="111.22195" />
+          <rect
+             style="fill:#c83737;stroke:#000000;stroke-width:0.365;stroke-dasharray:none;stroke-opacity:1"
+             id="rect1223-1-66-2"
+             width="6.9216099"
+             height="6.9216099"
+             x="104.16563"
+             y="111.22195" />
+        </g>
+      </g>
+      <g
+         id="g1843">
+        <text
+           xml:space="preserve"
+           style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.264583"
+           x="21.134552"
+           y="129.89482"
+           id="text1526"><tspan
+             sodipodi:role="line"
+             id="tspan1524"
+             style="stroke-width:0.264583"
+             x="21.134552"
+             y="129.89482">После 2 итерации</tspan><tspan
+             sodipodi:role="line"
+             style="stroke-width:0.264583"
+             x="21.134552"
+             y="136.95038"
+             id="tspan1528" /></text>
+        <g
+           id="g1793"
+           transform="translate(-1.5211258)">
+          <rect
+             style="fill:#008000;stroke:#000000;stroke-width:0.365;stroke-dasharray:none;stroke-opacity:1"
+             id="rect1223-0"
+             width="6.9216099"
+             height="6.9216099"
+             x="70.447449"
+             y="125.12627" />
+          <rect
+             style="fill:#008000;stroke:#000000;stroke-width:0.365;stroke-dasharray:none;stroke-opacity:1"
+             id="rect1223-1-1"
+             width="6.9216099"
+             height="6.9216099"
+             x="77.369057"
+             y="125.12627" />
+          <rect
+             style="fill:#c83737;stroke:#000000;stroke-width:0.365;stroke-dasharray:none;stroke-opacity:1"
+             id="rect1223-1-0-1"
+             width="6.9216099"
+             height="6.9216099"
+             x="84.290665"
+             y="125.12627" />
+          <rect
+             style="fill:#c83737;stroke:#000000;stroke-width:0.365;stroke-dasharray:none;stroke-opacity:1"
+             id="rect1223-1-3-0"
+             width="6.9216099"
+             height="6.9216099"
+             x="91.21228"
+             y="125.12627" />
+          <rect
+             style="fill:#c83737;stroke:#000000;stroke-width:0.365;stroke-dasharray:none;stroke-opacity:1"
+             id="rect1223-1-6-1"
+             width="6.9216099"
+             height="6.9216099"
+             x="98.133888"
+             y="125.12627" />
+          <rect
+             style="fill:#c83737;stroke:#000000;stroke-width:0.365;stroke-dasharray:none;stroke-opacity:1"
+             id="rect1223-1-66-4"
+             width="6.9216099"
+             height="6.9216099"
+             x="105.0555"
+             y="125.12627" />
+        </g>
+      </g>
+      <g
+         id="g1854">
+        <text
+           xml:space="preserve"
+           style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.264583"
+           x="21.134552"
+           y="141.90814"
+           id="text1532"><tspan
+             sodipodi:role="line"
+             id="tspan1530"
+             style="stroke-width:0.264583"
+             x="21.134552"
+             y="141.90814">После 3 итерации</tspan></text>
+        <g
+           id="g1801"
+           transform="translate(-0.29754639)">
+          <rect
+             style="fill:#008000;stroke:#000000;stroke-width:0.365;stroke-dasharray:none;stroke-opacity:1"
+             id="rect1223-35"
+             width="6.9216099"
+             height="6.9216099"
+             x="69.223869"
+             y="137.13959" />
+          <rect
+             style="fill:#008000;stroke:#000000;stroke-width:0.365;stroke-dasharray:none;stroke-opacity:1"
+             id="rect1223-1-11"
+             width="6.9216099"
+             height="6.9216099"
+             x="76.145477"
+             y="137.13959" />
+          <rect
+             style="fill:#008000;stroke:#000000;stroke-width:0.365;stroke-dasharray:none;stroke-opacity:1"
+             id="rect1223-1-0-2"
+             width="6.9216099"
+             height="6.9216099"
+             x="83.067085"
+             y="137.13959" />
+          <rect
+             style="fill:#c83737;stroke:#000000;stroke-width:0.365;stroke-dasharray:none;stroke-opacity:1"
+             id="rect1223-1-3-71"
+             width="6.9216099"
+             height="6.9216099"
+             x="89.988701"
+             y="137.13959" />
+          <rect
+             style="fill:#c83737;stroke:#000000;stroke-width:0.365;stroke-dasharray:none;stroke-opacity:1"
+             id="rect1223-1-6-2"
+             width="6.9216099"
+             height="6.9216099"
+             x="96.910309"
+             y="137.13959" />
+          <rect
+             style="fill:#c83737;stroke:#000000;stroke-width:0.365;stroke-dasharray:none;stroke-opacity:1"
+             id="rect1223-1-66-5"
+             width="6.9216099"
+             height="6.9216099"
+             x="103.83192"
+             y="137.13959" />
+        </g>
+      </g>
+      <g
+         id="g1865"
+         transform="translate(0.66740725,6.2291313)">
+        <text
+           xml:space="preserve"
+           style="font-size:5.64444px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:0.264583"
+           x="20.467146"
+           y="159.25935"
+           id="text1532-5"><tspan
+             sodipodi:role="line"
+             id="tspan1530-5"
+             style="stroke-width:0.264583"
+             x="20.467146"
+             y="159.25935">После 6 итерации</tspan></text>
+        <g
+           id="g1809"
+           transform="translate(-1.0761899,4.4493795)">
+          <rect
+             style="fill:#008000;stroke:#000000;stroke-width:0.365;stroke-dasharray:none;stroke-opacity:1"
+             id="rect1223-35-2"
+             width="6.9216099"
+             height="6.9216099"
+             x="69.335106"
+             y="150.04279" />
+          <rect
+             style="fill:#008000;stroke:#000000;stroke-width:0.365;stroke-dasharray:none;stroke-opacity:1"
+             id="rect1223-1-11-2"
+             width="6.9216099"
+             height="6.9216099"
+             x="76.256714"
+             y="150.04279" />
+          <rect
+             style="fill:#008000;stroke:#000000;stroke-width:0.365;stroke-dasharray:none;stroke-opacity:1"
+             id="rect1223-1-0-2-6"
+             width="6.9216099"
+             height="6.9216099"
+             x="83.178322"
+             y="150.04279" />
+          <rect
+             style="fill:#008000;stroke:#000000;stroke-width:0.365;stroke-dasharray:none;stroke-opacity:1"
+             id="rect1223-1-3-71-7"
+             width="6.9216099"
+             height="6.9216099"
+             x="90.099937"
+             y="150.04279" />
+          <rect
+             style="fill:#008000;stroke:#000000;stroke-width:0.365;stroke-dasharray:none;stroke-opacity:1"
+             id="rect1223-1-6-2-1"
+             width="6.9216099"
+             height="6.9216099"
+             x="97.021545"
+             y="150.04279" />
+          <rect
+             style="fill:#008000;stroke:#000000;stroke-width:0.365;stroke-dasharray:none;stroke-opacity:1"
+             id="rect1223-1-66-5-0"
+             width="6.9216099"
+             height="6.9216099"
+             x="103.94315"
+             y="150.04279" />
+        </g>
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-size:25.89px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';stroke-width:1.21359"
+         x="56.319977"
+         y="154.04944"
+         id="text1869"><tspan
+           sodipodi:role="line"
+           id="tspan1867"
+           style="stroke-width:1.21359"
+           x="56.319977"
+           y="154.04944">...</tspan></text>
+    </g>
+  </g>
+</svg>
