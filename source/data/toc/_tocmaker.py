@@ -3,7 +3,7 @@ import os
 ROOT_PATH = os.path.dirname(os.path.abspath(__file__))
 
 FILENAME = os.path.join(
-    ROOT_PATH, 'ErshovMathLogic2011.toc')
+    ROOT_PATH, 'МоевБраздыУправления1977.toc')
 
 with open(FILENAME, encoding='utf-8') as file:
     text = file.read()
