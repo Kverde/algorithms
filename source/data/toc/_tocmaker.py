@@ -1,4 +1,5 @@
 import os
+import re
 
 ROOT_PATH = os.path.dirname(os.path.abspath(__file__))
 
@@ -12,8 +13,14 @@ lines = text.split('\n')
 
 for i, line in enumerate(lines):
     id = f'{i + 1:0>3}'
-    if not line.startswith(id):
-        lines[i] = id + ' ' + line
+
+    if line.startswith(id):
+        continue
+
+    if re.match(r'^\d\d\d.*', line):
+        line = line[3:]
+
+    lines[i] = id + ' ' + line
 
 text = '\n'.join(lines)
 file = open(FILENAME, 'w', encoding='utf-8')
