@@ -54,6 +54,10 @@ class Page:
             raise WrongPageFile(
                 f"Metadata is empty in file {self.file.rel_filename}")
 
+        if 'page_type' not in self.metadata:
+            raise WrongPageFile(
+                f"Metadate doesn't contain page_type in file {self.file.rel_filename}")
+
     def __str__(self) -> str:
         return self.link
 
