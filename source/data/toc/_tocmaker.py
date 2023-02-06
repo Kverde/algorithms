@@ -17,8 +17,8 @@ for i, line in enumerate(lines):
     if line.startswith(id):
         continue
 
-    if re.match(r'^\d\d\d.*', line):
-        line = line[3:]
+    if re.match(r'^\d\d\d .*', line):
+        line = line[4:]
 
     lines[i] = id + ' ' + line
 
