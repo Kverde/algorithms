@@ -1,0 +1,171 @@
+001 Preface
+002   Who Should Read This Book?
+003   What You Will Find
+004   Comparison with Other Books
+005   Acknowledgments
+006 Chapter 1: Introduction
+007   1.1 What Is a Model?
+008   1.2 Modeling Notation
+009   1.3 What Is a Pattern?
+010   1.4 Why Are Patterns Important?
+011   1.5 Drawbacks of Patterns
+012   1.6 Pattern vs. Seed Model
+013   1.7 Aspects of Pattern Technology
+014   1.8 Chapter Summary
+015   Bibliographic Notes
+016   References
+017 Part I: Mathematical Templates
+018   Chapter 2: Tree Template
+019     2.1 Hardcoded Tree Template
+020     2.2 Simple Tree Template
+021     2.3 Structured Tree Template
+022     2.4 Overlapping Trees Template
+023     2.5 Tree Changing over Time Template
+024     2.6 Degenerate Node and Edge Template
+025     2.7 Chapter Summary
+026     Bibliographic Notes
+027     References
+028   Chapter 3: Directed Graph Template
+029     3.1 Simple Directed Graph Template
+030     3.2 Structured Directed Graph Template
+031     3.3 Node and Edge Directed Graph Template
+032     3.4 Connection Directed Graph Template
+033     3.5 Simple DG Changing over Time Template
+034     3.6 Node and Edge DG Changing over Time Template
+035     3.7 Chapter Summary
+036     Bibliographic Notes
+037     References
+038   Chapter 4: Undirected Graph Template
+039     4.1 Node and Edge Undirected Graph Template
+040     4.2 Connection Undirected Graph Template
+041     4.3 Undirected Graph Changing over Time Template
+042     4.4 Chapter Summary
+043   Chapter 5: Item Description Template
+044     5.1 Item Description Template
+045     5.2 Homomorphism Template
+046     5.3 Chapter Summary
+047     Bibliographic Notes
+048     References
+049   Chapter 6: Star Schema Template
+050     6.1 Star Schema Template
+051     6.2 Chapter Summary
+052     Bibliographic Notes
+053     References
+054   Chapter 7: Summary of Templates
+055 Part II: Antipatterns
+056   Chapter 8: Universal Antipatterns
+057     8.1 Symmetric Relationship Antipattern
+058     8.2 Dead Elements Antipattern
+059     8.3 Disguised Fields Antipattern
+060     8.4 Artificial Hardcoded Levels Antipattern
+061     8.5 Excessive Generalization Antipattern
+062     8.6 Disconnected Entity Types Antipattern
+063     8.7 Modeling Errors Antipattern
+064     8.8 Multiple Inheritance Antipattern
+065     8.9 Paradigm Degradation Antipattern
+066     8.10 Chapter Summary
+067     Bibliographic Notes
+068     References
+069   Chapter 9: Non-Data-Warehouse Antipatterns
+070     9.1 Derived Data Antipattern
+071     9.2 Parallel Attributes Antipattern
+072     9.3 Parallel Relationships Antipattern
+073     9.4 Combined Entity Types Antipattern
+074     9.5 Chapter Summary
+075 Part III: Archetypes
+076   Chapter 10: Archetypes
+077     10.1 Account
+078     10.2 Actor
+079     10.3 Address
+080     10.4 Asset
+081     10.5 Contract
+082     10.6 Course
+083     10.7 Customer
+084     10.8 Document
+085     10.9 Event
+086     10.10 Flight
+087     10.11 Item
+088     10.12 Location
+089     10.13 Opportunity
+090     10.14 Part
+091     10.15 Payment
+092     10.16 Position
+093     10.17 Product
+094     10.18 Role
+095     10.19 Transaction
+096     10.20 Vendor
+097     10.21 Chapter Summary
+098     Bibliographic Notes
+099     References
+100 Part IV: Identity
+101   Chapter 11 Identity
+102     11.1 Intrinsic Identity
+103     11.2 Names
+104     11.3 Surrogate Identity
+105     11.4 Structured Fields
+106     11.5 Master Applications
+107     11.6 Merging Data
+108     11.7 Chapter Summary
+109     Bibliographic Notes
+110     References
+111 Part V: Canonical Models
+112   Chapter 12 Language Translation
+113     12.1 Alternative Architectures
+114     12.2 Attribute Translation in Place
+115     12.3 Phrase-to-Phrase Translation
+116     12.4 Language-Neutral Translation
+117     12.5 Chapter Summary
+118     Bibliographic Notes
+119     References
+120   Chapter 13 Softcoded Values
+121     13.1 UML Model
+122     13.2 IDEF1X Model
+123     13.3 Architecture
+124     13.4 Softcoding Variations
+125     13.5 Chapter Summary
+126     Bibliographic Notes
+127     References
+128   Chapter 14: Generic Diagrams
+129     14.1 Generic Diagram Examples
+130     14.2 Diagram Subject Area
+131     14.3 Model Subject Area
+132     14.4 Model–Diagram Binding Subject Area
+133     14.5 DiagramType Subject Area
+134     14.6 Diagram Example, Revisited
+135     14.7 Chapter Summary
+136     Bibliographic Notes
+137   Chapter 15: State Diagrams
+138     15.1 State Diagrams
+139     15.2 Scenarios
+140     15.3 Chapter Summary
+141     Bibliographic Notes
+142     References
+143     Contents
+144 Part VI: Relational Database Design
+145   Chapter 16 Relational Database Design
+146     16.1 Mapping: Entity Types
+147     16.2 Mapping: Non-Qualified Relationships
+148     16.3 Mapping Qualified Relationships
+149     16.4 Mapping: Generalizations
+150     16.5 Design Identity
+151     16.6 Referential Integrity
+152     16.7 Miscellaneous Database Constraints
+153     16.8 Indexes
+154     16.9 Generating SQL Code
+155     16.10 Chapter Summary
+156     Bibliographic Notes
+157     References
+158 Appendix A: Explanation of the UML Notation
+159   Entity Type
+160   Relationships
+161   Generalization
+162   Bibliographic Notes
+163   References
+164 Appendix B: Explanation of the IDEF1X Notation
+165   Entity Type
+166   Relationships
+167   Generalization
+168   Bibliographic Notes
+169   References
+170 Appendix C: Glossary
+171   Index

@@ -4,7 +4,7 @@ import re
 ROOT_PATH = os.path.dirname(os.path.abspath(__file__))
 
 FILENAME = os.path.join(
-    ROOT_PATH, 'ГлушковПринципыПостроенияОГАС1975.toc')
+    ROOT_PATH, 'PatternsOfDataModeling2010.toc')
 
 with open(FILENAME, encoding='utf-8') as file:
     text = file.read()
